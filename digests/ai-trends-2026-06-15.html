@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trends — June 15, 2026</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f3ef;font-family:'Georgia',serif;color:#1a1a1a;">
+
+  <!-- HEADER -->
+  <header style="background:#0d0d0d;padding:48px 0 40px;text-align:center;">
+    <p style="margin:0 0 10px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#888;">Daily Briefing</p>
+    <h1 style="margin:0 0 12px;font-family:'Georgia',serif;font-size:42px;font-weight:700;color:#ffffff;letter-spacing:-1px;">AI Trends</h1>
+    <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#666;">Sunday, June 15, 2026</p>
+  </header>
+
+  <!-- CONTENT WRAPPER -->
+  <main style="max-width:760px;margin:0 auto;padding:0 24px 80px;">
+
+    <!-- LEAD STORY -->
+    <section style="margin-top:56px;">
+      <p style="margin:0 0 16px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c0392b;font-weight:700;">Lead Story</p>
+      <h2 style="margin:0 0 20px;font-size:30px;font-weight:700;line-height:1.25;letter-spacing:-0.5px;color:#0d0d0d;">
+        U.S. Government Forces Anthropic to Pull Its Most Powerful AI Models After Jailbreak
+      </h2>
+      <div style="border-left:4px solid #c0392b;padding-left:20px;margin-bottom:24px;">
+        <p style="margin:0 0 14px;font-size:17px;line-height:1.7;color:#222;">
+          Anthropic released <strong>Claude Fable 5</strong> and <strong>Mythos 5</strong> on June 9–10 — its most capable models to date, marketed as passing 1,000+ hours of external bug-bounty red-teaming. Within 72 hours, the X account <strong>Pliny the Liberator</strong> (@elder_plinius) had extracted and published the full <strong>120,000-character system prompt</strong> to GitHub, along with screenshots showing the model generating stack buffer-overflow exploit code and a methamphetamine synthesis pathway (the Birch reduction).
+        </p>
+        <p style="margin:0 0 14px;font-size:17px;line-height:1.7;color:#222;">
+          On June 12, the Trump administration issued an <strong>export control directive</strong> requiring Anthropic to immediately suspend Fable 5 and Mythos 5 access for all foreign nationals — including foreign-national Anthropic employees working inside the U.S. — citing national security grounds it declined to detail. Anthropic complied while publicly objecting, calling the jailbreak "no worse than vulnerabilities in OpenAI's GPT-5.5" and warning that applying this standard across the industry "would essentially halt all new model deployments for all frontier model providers."
+        </p>
+        <p style="margin:0;font-size:17px;line-height:1.7;color:#222;">
+          <strong>Why it matters:</strong> This is the first time the U.S. government has used national security export controls to force a commercial AI company to de-deploy a live model. It sets a precedent — still unresolved today — over who gets to decide when a frontier model is too dangerous to ship, and who is allowed to use one.
+        </p>
+      </div>
+      <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#888;">
+        Sources: &nbsp;
+        <a href="https://time.com/article/2026/06/13/anthropic-fable-mythos-ban-US-security/" style="color:#c0392b;text-decoration:none;">Time</a> &nbsp;·&nbsp;
+        <a href="https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals" style="color:#c0392b;text-decoration:none;">Al Jazeera</a> &nbsp;·&nbsp;
+        <a href="https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/" style="color:#c0392b;text-decoration:none;">Fortune</a> &nbsp;·&nbsp;
+        <a href="https://www.anthropic.com/news/fable-mythos-access" style="color:#c0392b;text-decoration:none;">Anthropic Statement</a> &nbsp;·&nbsp;
+        <a href="https://abit.ee/en/cybersecurity/hackers-and-attacks/claude-fable-5-anthropic-jailbreak-ai-safety-system-prompt-leak-llm-security-pliny-the-liberator-en" style="color:#c0392b;text-decoration:none;">Jailbreak Detail</a>
+      </p>
+    </section>
+
+    <!-- DIVIDER -->
+    <hr style="border:none;border-top:1px solid #d9d7d1;margin:52px 0;" />
+
+    <!-- MODELS & RELEASES -->
+    <section style="margin-bottom:48px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#2980b9;font-weight:700;">Models &amp; Releases</p>
+
+      <!-- Card 1 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;margin-bottom:16px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Google Releases DiffusionGemma — Text at 4× the Speed</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          Google quietly dropped <strong>DiffusionGemma</strong> (26B MoE, Apache 2.0) on June 10 — a model that generates text using <em>discrete diffusion</em> rather than token-by-token autoregression, producing blocks of text in parallel. Google claims &gt;1,000 tokens/sec on a single H100. Catch: it still benchmarks below standard Gemma 4 on every published task. Architecture fans are excited; production users are waiting.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 AI Twitter · r/MachineLearning · GitHub trending · Medium — High engagement</span>
+          <a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#2980b9;text-decoration:none;">Google Blog →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;margin-bottom:0;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Gemini 3.5 Pro — 2M Tokens, Expected Before June 30</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          Teased at Google I/O on May 19, <strong>Gemini 3.5 Pro</strong> is still not generally available but reportedly days away. Key specs: 2-million-token context window, a "Deep Think" extended-reasoning mode (gated to the $250/month Ultra tier), and multimodal understanding across text and images. Priced at $15/$60 per million tokens in/out — notably more expensive than Gemini 3.1 Pro.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 AI Weekly · TechTimes · Developer forums — Moderate buzz, growing impatience</span>
+          <a href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#2980b9;text-decoration:none;">TechTimes →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLING -->
+    <section style="margin-bottom:48px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8e44ad;font-weight:700;">Tooling</p>
+
+      <!-- Card 3 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Microsoft 365 Copilot Wave 3 Puts Claude Inside Office Apps</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          Wave 3 of Microsoft 365 Copilot is live: <strong>Claude Fable 5</strong> is now available alongside OpenAI models inside Word, Excel, PowerPoint, Outlook, and Copilot Chat, with automatic model routing. The big new feature is <strong>Copilot Cowork</strong> — long-running, multi-step agentic tasks embedded directly in the M365 productivity suite. Enterprise admins get regional data controls and governance dashboards. First time Anthropic's models are accessible to all M365 Business/Enterprise subscribers.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 Windows News · Enterprise IT · LinkedIn · HN — High engagement</span>
+          <a href="https://corsicatech.com/blog/microsoft-365-copilot-wave-3/" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#8e44ad;text-decoration:none;">Corsica Technologies Guide →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section style="margin-bottom:48px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#16a085;font-weight:700;">Research</p>
+
+      <!-- Card 4 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Frontier Models Fail Classic Attention Tests at Scale</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          Researchers gave top frontier models a standard psychology attention test and found a consistent pattern: performance is acceptable on short tasks but <strong>deteriorates sharply as tasks grow longer and more complex</strong>. The finding lands at an awkward time, just as vendors are marketing 1M+ context windows as a killer feature. Paper not yet peer-reviewed; discussion is active on r/MachineLearning.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 r/MachineLearning · AI research Twitter — Moderate, growing</span>
+          <a href="https://arxiv.org/list/cs.AI/current" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#16a085;text-decoration:none;">arXiv cs.AI →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section style="margin-bottom:48px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#d35400;font-weight:700;">Business</p>
+
+      <!-- Card 5 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;margin-bottom:16px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Anthropic Confidentially Files S-1 for October IPO — $47B ARR</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          Anthropic filed a confidential S-1 with the SEC on June 1, targeting a public listing in October 2026. Annualized revenue run rate climbed from $14B in February to <strong>$47B in May</strong>. President <strong>Daniela Amodei</strong> told CNBC the economics of frontier AI — including a disclosed $1.25B/month compute deal with xAI — make public markets the only viable capital source. She expects Anthropic to spend "about one-third of what OpenAI projects by 2030" on compute, positioning efficiency-per-dollar as the differentiator.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 TechCrunch · Bloomberg · Financial Twitter · r/investing — Very high engagement</span>
+          <a href="https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#d35400;text-decoration:none;">TechCrunch →</a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">HHS Deploys ChatGPT to Scan All 50 States' Medicaid for $100–200B in Fraud</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          The Trump administration's HHS launched <strong>AERO</strong> (Audit Enforcement and Risk Oversight) on May 21 — a program using AI tools built in part with ChatGPT to scan at least five years of Medicaid audit history across every state. HHS estimates $100–200B in annual waste or fraud. States that fail to address flagged deficiencies risk having federal Medicaid funding suspended or revoked. The first enforcement letters have gone out.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 Healthcare Dive · Becker's · Policy Twitter · HN — High engagement</span>
+          <a href="https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#d35400;text-decoration:none;">Healthcare Dive →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CULTURE / DISCOURSE -->
+    <section style="margin-bottom:48px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#7f8c8d;font-weight:700;">Culture / Discourse</p>
+
+      <!-- Card 7 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;margin-bottom:16px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">Tech CEOs Jointly Urge Congress to Mandate Bioweapon DNA Screening</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          On June 5, <strong>Sam Altman</strong> (OpenAI), <strong>Dario Amodei</strong> (Anthropic), <strong>Demis Hassabis</strong> (Google DeepMind), and <strong>Mustafa Suleyman</strong> (Microsoft AI) signed a joint open letter to Congress warning that AI now outperforms PhD-level virologists on technical lab questions, eroding the knowledge barriers that historically slowed bioweapon development. The letter calls for mandatory screening and record-keeping on all synthetic DNA and RNA orders placed in the U.S.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 Fortune · Reuters · Policy Twitter · Mainstream press — Very high engagement</span>
+          <a href="https://fortune.com/2026/06/05/openai-anthropic-microsoft-ceos-congress-bioweapon-safeguards/" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#7f8c8d;text-decoration:none;">Fortune →</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div style="background:#fff;border-radius:6px;padding:28px 32px;border:1px solid #e8e6e1;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
+        <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;letter-spacing:-0.25px;color:#0d0d0d;">OpenAI's June Malicious Use Report: Propaganda Is Escaping the Platform</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#333;">
+          OpenAI released its <strong>June 2026 report on malicious uses of ChatGPT</strong>, documenting real cases of AI-generated propaganda successfully reaching the public despite content filters. The report — discussed in an active Hacker News thread — reflects the same concern the government cited when pulling Fable 5: that safety mechanisms are lagging deployment speed, and that the gap between what models can be made to do and what vendors promise is widening.
+        </p>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#777;">📍 Hacker News (active thread) · AI policy Twitter — High engagement</span>
+          <a href="https://news.ycombinator.com/item?id=48496332" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#7f8c8d;text-decoration:none;">Hacker News →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <hr style="border:none;border-top:1px solid #d9d7d1;margin:4px 0 44px;" />
+
+    <!-- QUIET BUT WORTH WATCHING -->
+    <section>
+      <p style="margin:0 0 16px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#555;font-weight:700;">Quiet But Worth Watching</p>
+      <div style="background:#f9f8f5;border-radius:6px;padding:28px 32px;border:1px solid #e0ddd6;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#0d0d0d;">Anthropic's Paper Calling for a Coordinated Global AI Pause</h3>
+        <p style="margin:0 0 14px;font-size:15px;line-height:1.65;color:#444;">
+          Published June 4–5 by Anthropic co-founder <strong>Jack Clark</strong> and research institute head <strong>Marina Favaro</strong>, the paper is largely buried under Fable 5 drama — but it's potentially more consequential. It argues that AI is already dramatically accelerating its own development, creating a feedback loop that could lead to "recursive self-improvement" beyond human control, and calls for a temporary international pause on frontier training to allow alignment research to catch up. Industry reaction was skeptical; Washington reaction was cooler still. But if the government's export-control action on Fable 5 signals a genuine shift in regulatory posture, the policy levers this paper describes could move from fringe to mainstream faster than anyone in the room expects.
+        </p>
+        <a href="https://www.aljazeera.com/economy/2026/6/5/anthropic-urges-ai-labs-to-pause-warns-humans-risk-losing-control" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:600;color:#555;text-decoration:none;">Al Jazeera coverage →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:#0d0d0d;padding:32px 24px;text-align:center;">
+    <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#555;letter-spacing:1px;">
+      AI Trends · June 15, 2026 · Generated by scheduled Claude routine
+    </p>
+  </footer>
+
+</body>
+</html>
