@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trends — June 17, 2026</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f11;color:#e8e6e1;font-family:'Georgia',serif;line-height:1.65;">
+
+  <!-- ───────────── HEADER ───────────── -->
+  <header style="background:#0f0f11;border-bottom:1px solid #2a2a30;padding:40px 0 32px;">
+    <div style="max-width:760px;margin:0 auto;padding:0 24px;">
+      <p style="margin:0 0 6px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;">Daily AI Intelligence Briefing</p>
+      <h1 style="margin:0 0 6px;font-size:32px;font-weight:700;letter-spacing:-0.5px;color:#f0ede8;">AI Trends</h1>
+      <p style="margin:0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;color:#6b6b7a;">Tuesday, June 17, 2026 &nbsp;·&nbsp; Last 24 hours</p>
+    </div>
+  </header>
+
+  <main style="max-width:760px;margin:0 auto;padding:48px 24px 80px;">
+
+    <!-- ───────────── LEAD STORY ───────────── -->
+    <section style="margin-bottom:56px;">
+      <p style="margin:0 0 14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#e05c3a;">&#9632; Lead Story</p>
+      <h2 style="margin:0 0 18px;font-size:26px;font-weight:700;letter-spacing:-0.3px;color:#f0ede8;line-height:1.3;">
+        Mastra AI Framework Hit by npm Supply-Chain Attack — 144 Packages, 1.1M Weekly Downloads Exposed
+      </h2>
+      <p style="margin:0 0 14px;font-size:17px;color:#c8c4bc;line-height:1.7;">
+        On June 17 an attacker hijacked <strong style="color:#f0ede8;">ehindero</strong>, a real former contributor's npm account whose scope access was never revoked, and silently republished 141 packages in the <code style="background:#1e1e24;padding:2px 6px;border-radius:3px;font-size:15px;">@mastra</code> namespace between 01:12–02:36 UTC. Each poisoned package added <code style="background:#1e1e24;padding:2px 6px;border-radius:3px;font-size:15px;">easy-day-js</code> — a typosquat of <em>dayjs</em> — as a dependency; its postinstall hook downloaded and executed a remote-access trojan, then self-deleted. The blast radius: <strong style="color:#f0ede8;">@mastra/core alone has ~918k weekly downloads</strong>, and combined affected packages exceed 1.1 million installs per week.
+      </p>
+      <p style="margin:0 0 20px;font-size:17px;color:#c8c4bc;line-height:1.7;">
+        This matters because Mastra is the dominant JavaScript framework for building AI agents — CI pipelines, LLM tool-chains, and production deployments worldwide run it. Socket flagged <code style="background:#1e1e24;padding:2px 6px;border-radius:3px;font-size:15px;">easy-day-js</code> within six minutes and blocked installs for protected users; npm has since reverted the highest-profile packages, but smaller scoped packages and the dropper itself can still resolve to the payload. <strong style="color:#f0ede8;">Any team that ran <code style="background:#1e1e24;padding:2px 6px;border-radius:3px;font-size:15px;">npm install</code> between roughly 01:00–08:00 UTC today should treat the host as compromised.</strong>
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;">
+        <a href="https://socket.dev/blog/mastra-npm-packages-compromised" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Socket.dev analysis</a>
+        <span style="color:#3a3a44;">·</span>
+        <a href="https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">The Hacker News</a>
+        <span style="color:#3a3a44;">·</span>
+        <a href="https://safedep.io/mastra-npm-scope-takeover-supply-chain-attack/" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">SafeDep deep-dive</a>
+        <span style="color:#3a3a44;">·</span>
+        <a href="https://x.com/MsftSecIntel/status/2067099387101335909" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Microsoft SecIntel on X</a>
+      </div>
+    </section>
+
+    <hr style="border:none;border-top:1px solid #2a2a30;margin-bottom:52px;" />
+
+    <!-- ───────────── MODELS & RELEASES ───────────── -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;border-left:3px solid #6b4fff;padding-left:12px;">Models &amp; Releases</p>
+
+      <!-- Card 1 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">xAI ships Grok 4.1 and Grok 4.1 Thinking — free to all</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">Two new models landed June 15 with xAI claiming 3× fewer hallucinations and top placement on LMArena's head-to-head leaderboard. Both are available on free tier; paying users get higher rate limits. Users preferred 4.1 responses in ~65% of pairwise tests.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">X/Twitter &amp; LMArena — high engagement</span>
+          <a href="https://sqmagazine.co.uk/grok-4-1-xai-free-benchmark/" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">GPT-5.6 is days away — OpenAI chief scientist confirms "meaningful leap"</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">On June 16 OpenAI's chief scientist publicly described GPT-5.6 as a "meaningful improvement" over GPT-5.5. Polymarket traders have $960k in bets, with 83% probability on a June 22–28 launch window. Leaked details: 1.5M-token context window, improved agentic coding, direct challenge to Claude Fable 5.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">Polymarket, X/Twitter — very high engagement</span>
+          <a href="https://www.techtimes.com/articles/318492/20260616/gpt-56-openai-chief-scientist-calls-it-meaningful-leap-june-launch-nears.htm" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── TOOLING ───────────── -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;border-left:3px solid #3fa87e;padding-left:12px;">Tooling</p>
+
+      <!-- Card 3 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">OpenAI launches Deployment Simulation for pre-release model testing</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">Announced June 16: a new QA technique that replays real past production conversations through a candidate model before it ships. Outputs are graded against the original, giving OpenAI a data-driven signal on regressions. Quiet but a meaningful shift in how frontier models are validated before release.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">Developer forums, Hacker News — moderate engagement</span>
+          <a href="https://openai.com/news/" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">OpenCode becomes the most-starred open-source AI coding agent at 160k+ GitHub stars</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">The terminal-first open-source coding agent has overtaken both Gemini CLI and Codex to become the most-starred repo in the category with over 160,000 stars and 900+ contributors. Claude Opus 4.8 leads SWE-bench Verified at 88.6%; Codex CLI on GPT-5.5 tops Terminal-Bench 2.1 at 83.4%.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">GitHub Trending, Hacker News — high engagement</span>
+          <a href="https://github.com/opencode-ai/opencode" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── RESEARCH ───────────── -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;border-left:3px solid #d4a927;padding-left:12px;">Research</p>
+
+      <!-- Card 5 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">Anthropic's Project Glasswing scales Claude Mythos to 150 orgs across 15 countries</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">The initiative — which gives select partners access to Claude Mythos, Anthropic's unreleased frontier model, for autonomous zero-day finding — is expanding to ~150 new organizations in power, water, healthcare, and communications infrastructure. Partners report a 10× increase in bug-finding rate; the program has now surfaced 10,000+ critical- or high-severity vulnerabilities in critical-infrastructure software.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">TechCrunch, Anthropic blog — high engagement</span>
+          <a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── BUSINESS ───────────── -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;border-left:3px solid #c75ab5;padding-left:12px;">Business</p>
+
+      <!-- Card 6 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">Apple Siri AI on Google Gemini enters developer beta after WWDC</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">Apple officially rebranded Siri as "Siri AI" at WWDC 2026 (June 9) and confirmed it's built on a custom version of Google Gemini under a multi-year deal worth ~$1 billion per year. Developer betas are now live; public beta is July; full rollout is Fall 2026. The Gemini partnership makes this the largest public acknowledgment of Apple outsourcing its core AI stack.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">9to5Mac, MacObserver, X — very high engagement</span>
+          <a href="https://www.macobserver.com/news/apple-calls-its-new-assistant-siri-ai-at-wwdc-2026-gemini-partnership-now-official/" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">PwC's 2026 AI Jobs Barometer: 62% wage premium and a two-track labor split</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">Released June 15, the annual report analyzed 1B+ job ads across six continents. Key numbers: AI-skill roles growing 8× faster than the overall job market; 62% wage premium for AI skills (up from 57%); and a stark two-track split — "professionalised" roles (radiologists, recruiters) see 2× job growth and 42% faster salary gains vs "democratised" roles (medical secretaries, IT service managers).</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">LinkedIn, business press — high engagement</span>
+          <a href="https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── CULTURE / DISCOURSE ───────────── -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 24px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;border-left:3px solid #e05c3a;padding-left:12px;">Culture &amp; Discourse</p>
+
+      <!-- Card 8 -->
+      <div style="background:#17171c;border:1px solid #2a2a30;border-radius:8px;padding:24px 26px;margin-bottom:16px;">
+        <h3 style="margin:0 0 8px;font-size:18px;font-weight:700;color:#f0ede8;">arXiv's 1-year ban for AI "slop" is "welcome but unenforceable" — academics debate</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">arXiv's new policy — a 1-year ban followed by mandatory peer-review gating for any submission showing "incontrovertible" AI-generated content including hallucinated references — is generating fierce academic discourse. In the first seven weeks of 2026, one in every 277 submissions contained hallucinated references. Research-integrity experts call the policy necessary but nearly unenforceable at scale, and Nature published a skeptical editorial this week.</p>
+        <div style="display:flex;align-items:center;gap:16px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;flex-wrap:wrap;">
+          <span style="color:#6b6b7a;">Nature, Inside Higher Ed, Reddit r/MachineLearning — high engagement</span>
+          <a href="https://thenextweb.com/news/arxiv-ai-slop-ban-researchers-preprint" style="color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Source →</a>
+        </div>
+      </div>
+    </section>
+
+    <hr style="border:none;border-top:1px solid #2a2a30;margin-bottom:40px;" />
+
+    <!-- ───────────── QUIET ITEM FOOTER ───────────── -->
+    <section>
+      <p style="margin:0 0 14px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6b7a;">&#128065; Quiet but worth watching</p>
+      <div style="background:#17171c;border:1px solid #2a2a30;border-left:3px solid #3fa87e;border-radius:8px;padding:22px 26px;">
+        <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;">LiteLLM CVE-2026-42271 — CISA-confirmed RCE chain targeting AI API gateways</h3>
+        <p style="margin:0 0 12px;font-size:15px;color:#a8a49e;line-height:1.6;">Buried under today's Mastra headlines: CISA added CVE-2026-42271 to its Known Exploited Vulnerabilities catalog on June 9 and set a June 22 federal patch deadline. The flaw is a command injection in LiteLLM's MCP REST endpoints that chains with a Starlette host-header bypass (CVE-2026-48710) for a combined CVSS 10.0 unauthenticated RCE. Successful exploitation lets attackers exfiltrate every API key stored by the proxy — OpenAI, Anthropic, and others. Patch to v1.83.7 now. Most AI teams running an LLM proxy haven't heard of this.</p>
+        <a href="https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/" style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#7eb8f7;text-decoration:none;border-bottom:1px solid #3a5a7a;padding-bottom:1px;">Help Net Security — full advisory →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───────────── PAGE FOOTER ───────────── -->
+  <footer style="border-top:1px solid #2a2a30;padding:24px;text-align:center;">
+    <p style="margin:0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;color:#45454f;">Generated by Claude Code · <a href="https://github.com/antoniodeoliveirasegura/ai-trends" style="color:#6b6b7a;text-decoration:none;">antoniodeoliveirasegura/ai-trends</a> · June 17, 2026</p>
+  </footer>
+
+</body>
+</html>
