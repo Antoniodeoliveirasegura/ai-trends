@@ -30,5 +30,17 @@ than a default template. Skimmable in 3 minutes.
 Skip anything older than ~48h unless it newly blew up today. Be concrete — names,
 numbers, links. No filler.
 
-Finally, commit the new file to this repo on the `main` branch with the message
-`digest: ai-trends <YYYY-MM-DD>` and push.
+Finally, publish the digest to the `main` branch. This run may start on an
+auto-created working branch (e.g. `claude/...`) — do NOT leave the digest on a
+side branch and do NOT open a pull request. Push the commit straight to `main`:
+
+```sh
+git add digests/ai-trends-<YYYY-MM-DD>.html
+git commit -m "digest: ai-trends <YYYY-MM-DD>"
+git push origin HEAD:main
+```
+
+`HEAD:main` pushes the new commit directly onto the remote `main` no matter which
+local branch the run started on. If the push is rejected because `main` moved,
+run `git fetch origin main && git rebase origin/main`, then
+`git push origin HEAD:main` again.
