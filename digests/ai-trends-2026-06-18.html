@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trends — June 18, 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: #f7f6f3;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0055cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── HEADER ──────────────────────────────────────────────── */
+    .site-header {
+      background: #0f0f0f;
+      color: #fff;
+      padding: 36px 0 32px;
+    }
+    .site-header .inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .site-header .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .site-header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    .site-header .dateline {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #aaa;
+      font-weight: 400;
+    }
+
+    /* ── MAIN CONTENT ───────────────────────────────────────── */
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── LEAD STORY ─────────────────────────────────────────── */
+    .lead-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin-bottom: 10px;
+    }
+    .lead-story {
+      background: #fff;
+      border-left: 5px solid #c0392b;
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-bottom: 56px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+    .lead-story h2 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+    .lead-story p {
+      font-size: 15.5px;
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .lead-story p:last-child {
+      margin-bottom: 0;
+    }
+    .lead-story .source-row {
+      margin-top: 18px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .lead-story .source-chip {
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      background: #c0392b;
+      border-radius: 3px;
+      padding: 4px 10px;
+    }
+    .lead-story .source-link {
+      font-size: 13px;
+      align-self: center;
+    }
+
+    /* ── THEME GROUPS ───────────────────────────────────────── */
+    .theme-group {
+      margin-bottom: 52px;
+    }
+    .theme-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #666;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* ── TREND CARD ─────────────────────────────────────────── */
+    .card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 22px 26px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .card:last-child {
+      margin-bottom: 0;
+    }
+    .card-headline {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      line-height: 1.35;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .card-platform {
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #777;
+    }
+    .card-engagement {
+      font-size: 12px;
+      color: #999;
+    }
+    .card-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: #0055cc;
+    }
+
+    /* ── QUIET ITEM ─────────────────────────────────────────── */
+    .quiet-section {
+      border-top: 2px solid #ddd;
+      padding-top: 32px;
+      margin-top: 8px;
+    }
+    .quiet-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 14px;
+    }
+    .quiet-card {
+      background: #fff;
+      border-radius: 6px;
+      border-left: 4px solid #b0b0b0;
+      padding: 20px 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .quiet-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .quiet-card p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.65;
+    }
+    .quiet-card .card-meta {
+      margin-top: 10px;
+    }
+
+    /* ── FOOTER ─────────────────────────────────────────────── */
+    .site-footer {
+      background: #0f0f0f;
+      color: #666;
+      text-align: center;
+      font-size: 12px;
+      padding: 20px 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="inner">
+      <div class="eyebrow">Daily AI Briefing</div>
+      <h1>AI Trends</h1>
+      <div class="dateline">Wednesday, June 18, 2026 &nbsp;·&nbsp; Last 24 hours</div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- LEAD STORY -->
+    <div class="lead-label">&#9632; Lead Story</div>
+    <div class="lead-story">
+      <h2>Anthropic's Fable 5 &amp; Mythos 5 Remain Dark — Day Six of US Government Suspension</h2>
+      <p>
+        As of today, Claude Fable 5 and Mythos 5 are still offline worldwide, following a US export-control directive issued on June 12 that cited a government-identified jailbreak technique capable of extracting known software vulnerabilities. Because Anthropic cannot filter foreign nationals from US users in real time, the company pulled both models entirely — affecting hundreds of millions of users — rather than risk violating the order.
+      </p>
+      <p>
+        Anthropic has publicly pushed back, arguing that the jailbreak is narrow, already present in competing models, and that applying this standard industry-wide would effectively freeze all new frontier deployments. Prediction markets (Kalshi) currently assign ~57% probability to restoration before July, with no official date given. The standoff is the sharpest collision yet between government AI-export policy and commercial AI rollout.
+      </p>
+      <div class="source-row">
+        <span class="source-chip">Ongoing</span>
+        <a class="source-link" href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">Anthropic Statement ↗</a>
+        <a class="source-link" href="https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/" target="_blank" rel="noopener">MarkTechPost Coverage ↗</a>
+        <a class="source-link" href="https://news.kalshi.com/p/fable-5-odds-anthropic-access-restored-july-57-percent" target="_blank" rel="noopener">Kalshi Odds ↗</a>
+      </div>
+    </div>
+
+    <!-- THEME: MODELS & RELEASES -->
+    <div class="theme-group">
+      <div class="theme-title">Models &amp; Releases</div>
+
+      <div class="card">
+        <div class="card-headline">NVIDIA Nemotron 3 Nano Omni Unifies Vision, Audio &amp; Language in a 30B MoE Model</div>
+        <div class="card-desc">NVIDIA's newest Nemotron entry is a 30-billion-parameter Mixture-of-Experts omni model that processes video, audio, and text in a single pass, claiming up to 9× higher throughput versus comparable open multimodal models. It completes the Nemotron 3 family (alongside the 550B Ultra released June 4), positioning NVIDIA as a full-stack open-weights player for agentic workloads.</div>
+        <div class="card-meta">
+          <span class="card-platform">NVIDIA Blog · HN · r/LocalLLaMA</span>
+          <span class="card-engagement">Significant developer discussion</span>
+          <a class="card-link" href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog ↗</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-headline">GPT-5.6 Now Expected Late June — OpenAI Chief Scientist Calls It "Meaningful Improvement"</div>
+        <div class="card-desc">OpenAI chief scientist Jakub Pachocki described GPT-5.6 internally as a "meaningful improvement" over GPT-5.5, with leaked developer tests suggesting a ~1.5M-token context window (43% above GPT-5.5) and an "UltraFast" Codex mode with 2–5× lower coding latency. Prediction markets peg an 83% chance of a June 22–28 launch. No official API string or system card exists yet.</div>
+        <div class="card-meta">
+          <span class="card-platform">TechTimes · Prediction Markets (Polymarket)</span>
+          <span class="card-engagement">$960K+ wagered on release date</span>
+          <a class="card-link" href="https://www.techtimes.com/articles/318492/20260616/gpt-56-openai-chief-scientist-calls-it-meaningful-leap-june-launch-nears.htm" target="_blank" rel="noopener">TechTimes ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME: TOOLING -->
+    <div class="theme-group">
+      <div class="theme-title">Tooling</div>
+
+      <div class="card">
+        <div class="card-headline">Microsoft MAI-Code-1-Flash Rolls Out to All GitHub Copilot Tiers</div>
+        <div class="card-desc">Microsoft's first in-house coding model (5B active params, 137B total MoE, 256K context) is now available across Free, Pro, Pro+, and Max Copilot plans. Trained entirely on Microsoft-curated data without third-party model distillation, it beats Claude Haiku 4.5 by 16 points on SWE-Bench Pro (51.2% vs 35.2%) while solving problems with up to 60% fewer tokens. A quiet but serious move to reduce OpenAI dependency.</div>
+        <div class="card-meta">
+          <span class="card-platform">GitHub Changelog · r/Programming · HN</span>
+          <span class="card-engagement">Highly engaged developer community</span>
+          <a class="card-link" href="https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/" target="_blank" rel="noopener">GitHub Changelog ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME: RESEARCH -->
+    <div class="theme-group">
+      <div class="theme-title">Research</div>
+
+      <div class="card">
+        <div class="card-headline">U of T Researchers Build Self-Replicating AI Worm That Breached 74% of a Test Network</div>
+        <div class="card-desc">University of Toronto published a proof-of-concept "adaptive agentic AI worm" that uses open-weight LLMs to reason about each target, generate tailored exploit code, and siphon compute from compromised machines. Across 15 lab runs on a 33-machine corporate testbed (Linux, Windows, IoT), it achieved a 73.8% exploitation rate in seven days. Operational details were redacted from the arXiv paper. Security researchers and CISO communities are taking it seriously as a preview of autonomous, AI-driven network attacks.</div>
+        <div class="card-meta">
+          <span class="card-platform">arXiv · The Hacker News · Dark Reading · r/netsec</span>
+          <span class="card-engagement">Viral in security circles; flagged by CISOs</span>
+          <a class="card-link" href="https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html" target="_blank" rel="noopener">The Hacker News ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME: BUSINESS -->
+    <div class="theme-group">
+      <div class="theme-title">Business</div>
+
+      <div class="card">
+        <div class="card-headline">Anthropic at $965B: Now the World's Most Valuable AI Startup — and Still Rising</div>
+        <div class="card-desc">The $65B Series H (led by Altimeter, Dragoneer, Greenoaks, and Sequoia) closed in late May puts Anthropic's post-money valuation at $965B, surpassing OpenAI's $852B and making it the most valuable private AI company in history. Run-rate revenue crossed $47B this month, and the company has locked in compute deals with Amazon (5 GW), Google/Broadcom (5 GW TPUs), and SpaceX (Colossus GPU access). An IPO is now widely expected before year-end.</div>
+        <div class="card-meta">
+          <span class="card-platform">TechCrunch · CNBC · Morningstar</span>
+          <span class="card-engagement">Top business story of the week</span>
+          <a class="card-link" href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/" target="_blank" rel="noopener">TechCrunch ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME: CULTURE / DISCOURSE -->
+    <div class="theme-group">
+      <div class="theme-title">Culture &amp; Discourse</div>
+
+      <div class="card">
+        <div class="card-headline">Companies Are Flooding Reddit with Fake Posts to Manipulate AI Search Answers</div>
+        <div class="card-desc">A 404 Media investigation documented peptide and hormone-therapy companies paying posters to seed r/biohackers (830K members) with promotional content engineered to surface in AI answer engines — a tactic now called "answer engine optimization" (AEO). Because Google AI Overviews cite Reddit in 21% of responses and Perplexity ranked it #1 cited domain through mid-2025, a handful of seeded posts can reliably shift what AI systems say about a product to millions of users. Moderators have responded with new posting bans; the broader integrity problem remains unsolved.</div>
+        <div class="card-meta">
+          <span class="card-platform">404 Media · PYMNTS · TechSpot · HN</span>
+          <span class="card-engagement">Widely shared; trending on HN front page</span>
+          <a class="card-link" href="https://www.404media.co/it-is-trivially-easy-to-use-reddit-to-manipulate-ai-search-research-suggests/" target="_blank" rel="noopener">404 Media ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIET BUT WORTH WATCHING -->
+    <div class="quiet-section">
+      <div class="quiet-label">&#128065; Quiet but worth watching</div>
+      <div class="quiet-card">
+        <h3>OpenAI's "Deployment Simulation" Paper — A New Safety Method That Flew Under the Radar</h3>
+        <p>
+          Published June 16–17, OpenAI's Deployment Simulation paper describes replaying 1.3 million de-identified real user conversations through a candidate model before release — stripping the original response and regenerating it — then scoring the new completions for behavioral drift, novel failure modes, and jailbreak susceptibility. Applied across GPT-5 Thinking through GPT-5.4, it caught misalignment patterns that static evals missed and was extended to agentic coding runs with tool calls. Overshadowed by the Fable 5 drama, this is arguably the most practically important alignment paper of the week: it closes the gap between lab evals and real-world behavior prediction, and sets a template other labs should copy.
+        </p>
+        <div class="card-meta">
+          <span class="card-platform">OpenAI Blog · MarkTechPost · HN</span>
+          <a class="card-link" href="https://openai.com/index/deployment-simulation/" target="_blank" rel="noopener">OpenAI Blog ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    AI Trends · Daily Digest · June 18, 2026 &nbsp;·&nbsp; Generated by Claude
+  </footer>
+
+</body>
+</html>
