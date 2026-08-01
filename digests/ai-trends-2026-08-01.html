@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trends — August 1, 2026</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f11;color:#e8e6e1;font-family:'Georgia',serif;line-height:1.65;">
+
+  <!-- HEADER -->
+  <header style="background:#0f0f11;border-bottom:1px solid #2a2a2f;padding:48px 0 36px;">
+    <div style="max-width:760px;margin:0 auto;padding:0 24px;">
+      <p style="margin:0 0 10px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7b7b8a;">Daily Briefing</p>
+      <h1 style="margin:0 0 8px;font-size:38px;font-weight:700;letter-spacing:-0.02em;color:#f0ede8;line-height:1.15;">AI Trends</h1>
+      <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#7b7b8a;letter-spacing:0.03em;">Saturday, August 1, 2026 &nbsp;·&nbsp; UTC</p>
+    </div>
+  </header>
+
+  <main style="max-width:760px;margin:0 auto;padding:0 24px 80px;">
+
+    <!-- LEAD STORY -->
+    <section style="margin:52px 0 56px;">
+      <p style="margin:0 0 14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#e05252;">Lead Story</p>
+      <h2 style="margin:0 0 18px;font-size:26px;font-weight:700;color:#f0ede8;line-height:1.25;letter-spacing:-0.01em;">
+        DeepSeek Undercuts the Frontier Again: V4-Flash-0731 Hits Opus-Class Scores at $0.14 a Million Tokens
+      </h2>
+      <p style="margin:0 0 14px;font-size:17px;color:#c8c4bc;line-height:1.7;">
+        DeepSeek pushed its production V4-Flash API into public beta on July 31 without touching the architecture — still 284B total parameters, 13B active via MoE, 1M-token context — and got the entire gain from re-post-training around agentic and reasoning workloads. The result: a jump to 50 on the Artificial Analysis Intelligence Index, a visible spike on the price/performance Pareto frontier, and benchmark numbers that reportedly beat DeepSeek's own much larger V4-Pro-Preview, all while pricing holds at $0.14 / $0.28 per million input/output tokens.
+      </p>
+      <p style="margin:0 0 14px;font-size:17px;color:#c8c4bc;line-height:1.7;">
+        It matters because it lands one day after OpenAI slashed GPT-5.6 API prices up to 80% specifically to fend off Chinese competitors — DeepSeek's answer wasn't to cut prices at all, it was to just get better for the same money, which is a harder move for Western labs to counter than a one-time discount. Stack this next to Kimi K3, Qwen3.8-Max, and GLM-5.2 all shipping frontier-adjacent open weights this summer, and the gap that's closing fastest isn't raw capability — it's price-per-intelligence, the exact metric OpenAI just spent a price cut trying to defend.
+      </p>
+      <div style="margin:22px 0 0;">
+        <a href="https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/" style="display:inline-block;background:#e05252;color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;padding:9px 18px;border-radius:4px;">MarkTechPost — the release →</a>
+        &nbsp;
+        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" style="display:inline-block;color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">Hugging Face — model card →</a>
+      </div>
+    </section>
+
+    <hr style="border:none;border-top:1px solid #2a2a2f;margin:0 0 52px;" />
+
+    <!-- THEME: TOOLING -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 22px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#a78bfa;">Tooling</p>
+      <div style="display:grid;gap:16px;">
+
+        <!-- Card: GCC AI policy -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">GCC Formally Rejects AI-Generated Code Over 15 Lines — a Line in the Sand for Core Toolchains</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">The GCC steering committee's July 29 policy rejects any "legally significant" contribution — set at roughly 15 lines of code or text, per the GNU Project's own maintainer guidelines — that's generated or derived from an LLM. Developers can still use LLMs for research, bug-hunting, and patch review internally, AI-generated test cases are exempt, and any AI-assisted contribution now needs an "Assisted-by:" commit tag, mirroring what the Linux kernel adopted earlier this year. Discussion was still very much alive on Hacker News and Slashdot into July 31.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 Hacker News, Slashdot, Phoronix — moderate-high, multi-day compiler/toolchain-dev discussion</span>
+          </div>
+          <a href="https://www.phoronix.com/news/GCC-Declining-AI-Contributions" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">Phoronix — the policy →</a>
+        </div>
+
+        <!-- Card: Claude Code usage boost -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">Anthropic Quietly Extends Claude Code's 50% Weekly Limit Boost Through August 19</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">The temporary 50%-higher weekly usage cap for Claude Code — due to expire — got renewed for another month across Pro, Max, Team, and seat-based Enterprise plans. Claude Cowork's separate 100%-higher limit still ends August 5, and five-hour limits are unchanged; this is purely a weekly-cap extension, not a pricing or model change.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 X, developer/power-user communities — moderate, closely tracked rather than viral</span>
+          </div>
+          <a href="https://x.com/aibuilderclub_/status/2078666540740759587" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">X — the extension →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THEME: RESEARCH -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 22px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#34d399;">Research</p>
+      <div style="display:grid;gap:16px;">
+
+        <!-- Card: AISPA system prompt audit -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">Study Audits 3,249 Hidden System-Prompt Instructions Across 88 Commercial AI Products</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">"AISPA," posted to arXiv on July 31 by a group including Rishi Bommasani, Erik Brynjolfsson, and Alex Pentland, is a systematic audit of the system prompts that quietly govern commercial AI products but are almost never disclosed to users or regulators. Scoring 3,249 individual instructions across eight dimensions — from identity transparency to manipulation prevention — the team classified each as protective of users or actively problematic, giving "what is my AI actually being told to do" a real dataset for the first time.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 arXiv, AI-policy circles on X — moderate, early but timed right before the EU's transparency rules land</span>
+          </div>
+          <a href="https://arxiv.org/abs/2607.28617" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">arXiv — the paper →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THEME: BUSINESS -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 22px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#fbbf24;">Business</p>
+      <div style="display:grid;gap:16px;">
+
+        <!-- Card: EU AI Act transparency -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">EU AI Act's Transparency Rules Go Live Tomorrow — Every AI Product Sold in Europe Has to Say So</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">Starting August 2, Article 50 requires any AI system placed on the EU market to disclose when a user is dealing with a machine (unless obvious from context), and any system generating synthetic audio, image, video, or text must mark that output in a machine-readable, AI-detectable way. Products already on the market get a grace period to December 2, but the obligation is broad — it hits general-purpose AI too, not just the "high-risk" category that's been pushed over a year out.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 EU policy press, compliance/legal circles — moderate, about to spike once enforcement actually starts</span>
+          </div>
+          <a href="https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">Technology.org — what applies Aug 2 →</a>
+        </div>
+
+        <!-- Card: Legora acquires Wexler -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">Legal-AI Roll-Up Continues: Legora Buys London's Wexler, Its Fifth Deal of 2026</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">Swedish legal-AI startup Legora acquired London-based Wexler on July 29 — its fifth acquisition this year — as the legal-AI space keeps consolidating around a handful of well-funded platforms instead of staying fragmented across point solutions.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 Tech.eu, legal-tech press — low-moderate, niche but part of a fast-moving vertical-AI M&amp;A pattern</span>
+          </div>
+          <a href="https://tech.eu/2026/07/29/legora-acquires-legal-ai-startup-wexler-in-fifth-acquisition-of-2026/" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">Tech.eu — the acquisition →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THEME: CULTURE / DISCOURSE -->
+    <section style="margin-bottom:52px;">
+      <p style="margin:0 0 22px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#f472b6;">Culture &amp; Discourse</p>
+      <div style="display:grid;gap:16px;">
+
+        <!-- Card: 2x not 10x -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">HN's Top Story All Weekend: Why LLM Coding Gains Are Plateauing at "2x, Not 10x"</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">The essay that topped Hacker News on July 31 argues 2026's LLM coding gains came from models finally becoming reliable enough to run in automated feedback loops — not from raw capability jumps — and that further model improvements alone are unlikely to unlock a 10x productivity boost. Its staircase analogy (being tall enough to climb one step at a time matters far more than being tall enough to climb two) landed as a corrective to a year of "agents will 10x everyone" claims, and it's still generating fresh comment threads into the weekend.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 Hacker News (#1, hundreds of comments), developer X — high, the most-discussed AI-adjacent post of the weekend</span>
+          </div>
+          <a href="https://obryant.dev/p/2x-not-10x/" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">obryant.dev — the essay →</a>
+          &nbsp;
+          <a href="https://news.ycombinator.com/item?id=49047839" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">HN thread →</a>
+        </div>
+
+        <!-- Card: Pacing the Frontier update -->
+        <div style="background:#18181d;border:1px solid #2a2a2f;border-radius:8px;padding:24px 26px;">
+          <h3 style="margin:0 0 8px;font-size:17px;font-weight:700;color:#f0ede8;line-height:1.3;">"Pacing the Frontier" Letter Passes 1,268 Signatures; Debate Shifts From "Who Signed" to "What Would This Require"</h3>
+          <p style="margin:0 0 12px;font-size:14px;color:#a8a49e;line-height:1.6;">The frontier-lab employee letter keeps climbing — now past 1,268 verified signatures from Anthropic, OpenAI, Google DeepMind, and Meta staff. The latest wave of coverage has moved past headcount to mechanics: what an international "pacing" framework would actually need to enforce, and skeptics' pushback that the letter asks for tools to slow AI later, not for anyone to slow down now.</p>
+          <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#6b6b78;margin-bottom:12px;">
+            <span>📍 Forbes, X, AI-policy Substacks — moderate-high, sustained multi-day discourse</span>
+          </div>
+          <a href="https://www.pacingthefrontier.com/" style="color:#7b9ef0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;text-decoration:none;border-bottom:1px solid #7b9ef044;padding-bottom:1px;">Pacing the Frontier — signatures →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <hr style="border:none;border-top:1px solid #2a2a2f;margin:0 0 44px;" />
+
+    <!-- FOOTER: QUIET BUT WORTH WATCHING -->
+    <section style="margin-bottom:0;">
+      <p style="margin:0 0 14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#7b7b8a;">Quiet but Worth Watching</p>
+      <div style="background:#131316;border-left:3px solid #2a2a2f;padding:20px 24px;border-radius:0 6px 6px 0;">
+        <h3 style="margin:0 0 8px;font-size:15px;font-weight:700;color:#c8c4bc;line-height:1.3;">Today Is the Deadline for NSA and CISA to Define What Counts as a "Covered Frontier Model"</h3>
+        <p style="margin:0 0 12px;font-size:14px;color:#7b7b8a;line-height:1.6;">Buried in June's AI cybersecurity executive order is a 60-day clock that runs out today: the NSA, CISA, and Treasury are due to deliver a classified benchmarking process for designating which AI models count as "covered frontier models," plus a voluntary framework covering up to 30 days of pre-release federal access to them. It binds the government, not developers, so nothing changes for AI companies today — but whatever benchmark gets set now will quietly decide which future models get pulled into mandatory federal review.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid #2a2a2f;padding:28px 0;margin-top:0;">
+    <div style="max-width:760px;margin:0 auto;padding:0 24px;">
+      <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;color:#4a4a55;line-height:1.6;">AI Trends Daily Briefing &nbsp;·&nbsp; August 1, 2026 &nbsp;·&nbsp; Generated automatically. Sources linked inline. All engagement estimates are approximate.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
