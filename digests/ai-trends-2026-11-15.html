@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-15</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.empty{font-family:system-ui,sans-serif;font-size:.9rem;color:#666;font-style:italic}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Sunday, 15 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">A WSJ report says Nvidia paid for its own demand, Thinking Machines quietly ships its open weights, and the weekend before AI's biggest week.</p>
+<div class="note"><b>Limited-confidence digest.</b> This session could not reach Reddit, X, Hacker News, YouTube or most news sites directly, because the network policy blocked them. It relies on web-search results instead. Engagement levels are estimates. Items marked <span class="flag">unverified</span> came from secondary or single sources only. The weekend was light on fresh launches, so some items are 48–72 hours old but still drawing discussion.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>WSJ: Nvidia financed the startups and neoclouds that bought its GPUs</h3>
+<p>A Wall Street Journal investigation published on Thursday, Nov 13, reports that Nvidia invested in AI startups and small cloud providers, and guaranteed some of their deals, so they could buy GPUs it had no other buyers for. Former CEO Jensen Huang reportedly feared an "avalanche" of prepaid TSMC supply. Per the report, then-CFO Colette Kress pushed in August to scale back the commitments and cut a proposed guarantee on the OpenAI build-out roughly in half. Huang reportedly called her "a deer in the headlights." On Hacker News the story became Saturday's top thread, with about 1,050 points and 620 comments. The report lands days after Huang's exit and four days before Kress's first earnings as interim CEO, on <b>Tue Nov 17</b>, where options price a swing of about 9%. "Circular financing" is now the main question the AI trade has to answer. Nvidia has long rejected the label, and the dollar figures differ across secondary reports.</p>
+<p class="meta">Discussed: Hacker News (#1, ~1,050 pts), hardware and gaming press, finance Twitter · very high · <a href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus">TechPowerUp</a> · <a href="https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon/">Wccftech</a> · <a href="https://videocardz.com/newz/nvidia-reportedly-financed-ai-companies-unable-to-afford-its-gpus-huang-feared-a-supply-avalanche">VideoCardz</a> · <a href="https://invezz.com/news/2026/11/13/nvidia-earnings-preview-q3-kress-huang/">Invezz earnings preview</a> · <a href="https://www.benzinga.com/markets/earnings/26/11/63277064/nvidia-earnings-without-jensen-huang-implied-move-bending-spoons">Benzinga (implied move)</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card"><p><b>Correction: Inkling 2 Small's open weights are already out.</b> Yesterday's footer said they were still pending. In fact, Thinking Machines updated its announcement on Nov 12 to say the weights are downloadable on Hugging Face, in NVFP4 and MXFP8 repositories. The model is a 594B mixture-of-experts with 17B active parameters and a 1M-token context, and it supports vLLM, SGLang and Unsloth. One caveat: Byteiota notes that Apache 2.0 appears only in the model-card metadata, and the repository has no LICENSE file yet.</p><p class="meta">Local-LLM Reddit, dev press · moderate–high · <a href="https://thinkingmachines.ai/news/inkling-2-small/">Thinking Machines</a> · <a href="https://thinkingmachines.ai/model-card/inkling-2-small/">Model card</a> · <a href="https://byteiota.com/inkling-2-small-open-weights/">Byteiota</a></p></div>
+
+<h2>Tooling &amp; Agents</h2>
+<div class="card"><p><b>Unsloth's Dynamic 3.0 quantizations of Qwen3.8-27B reach the HN front page.</b> The GGUF builds range from about 6 GB at 1-bit to 54.7 GB at BF16. Unsloth claims more than 10% better accuracy than rival quantizations of the same size, a figure from its own benchmarks that no one has independently reproduced. The calibration files are published so others can check it.</p><p class="meta">Hacker News front page (Nov 14), r/LocalLLaMA · moderate · <a href="https://unsloth.ai/docs/models/qwen3.8-27b">Unsloth docs</a> · <a href="https://runtimewire.com/article/unsloth-dynamic-3-qwen-3-8-gguf-quants">RuntimeWire</a></p></div>
+<div class="card"><p><b>Plannotator surges on GitHub Trending.</b> It is a local, browser-based workspace for reviewing and annotating the plans of AI coding agents before they act, and it reportedly gained about 860 stars in 24 hours. It is another sign that the agent stack is shifting toward human review. <span class="flag">unverified</span></p><p class="meta">GitHub Trending, dev Twitter · moderate · <a href="https://blockchain.news/news/plannotator-github-trending-surge">Blockchain.News</a> · <a href="https://github.com/backnotprop/plannotator">GitHub repo</a></p></div>
+
+<h2>Research</h2>
+<div class="card"><p><b>LEAD-RL: per-agent credit for multi-agent research systems.</b> This preprint, submitted Nov 12, trains each agent in a deep-research team on its own contribution rather than on a shared team reward. It reports higher BrowseComp accuracy than team-level credit, offering a practical fix for "who did the work" in orchestrator and sub-agent setups. <span class="flag">unverified</span></p><p class="meta">Research Twitter, agent-builder newsletters · low–moderate · <a href="https://casrai.org/news/lead-rl-coordination-deep-research-agents-preprint-2026">CASRAI</a> · <a href="https://samonai.substack.com/p/ai-brief-november-14-2026">Sam on AI brief</a></p></div>
+
+<h2>Business</h2>
+<div class="card"><p><b>Anthropic enters IPO week with talk of pricing above the range.</b> Reports say the book is about 6× covered. The FT, via secondary outlets, says bankers are weighing a price above $70–78, which would mean a valuation of $1.5T or more. The FT also says Anthropic is prioritising cash raised over valuation, given about $900.9B in compute and infrastructure commitments. Pricing is due <b>Wed Nov 18</b> and trading as ANT on Nov 19. Read alongside the Nvidia story, the week tests both ends of the AI supply chain.</p><p class="meta">Finance press, markets Twitter, retail-investor Reddit · very high · <a href="https://seekingalpha.com/news/4670408-anthropic-bankers-weigh-higher-ipo-price-range-as-investor-demand-surges-ft">Seeking Alpha (FT)</a> · <a href="https://www.unite.ai/anthropic-ipo-could-raise-64-billion-as-orders-reach-six-times/">Unite.AI</a> · <a href="https://finance.biggo.com/news/94455a16-8d60-4f8d-9707-a6bdf15f265d">BigGo Finance</a></p></div>
+<div class="card"><p><b>Hardware rounds keep landing.</b> Agile Robots, a German robotics company, raised a $500M Series F led by SoftBank at an $8.5B valuation, bringing its total funding to $2B; the money goes to US expansion. Separately, Fractile, a UK maker of inference chips, reportedly raised $720M at a $7B valuation ahead of its first chip, due in 2027.</p><p class="meta">Startup press, robotics and chip Twitter · moderate · <a href="https://siliconangle.com/2026/11/12/agile-robots-raises-500m-funding-led-by-softbank-at-8-5b-valuation/">SiliconANGLE</a> · <a href="https://www.analyticsinsight.net/news/weekly-startup-news-openai-fractile-uforce-lead-this-weeks-funding-rounds">Analytics Insight</a></p></div>
+
+<h2>Culture / Discourse</h2>
+<div class="card"><p><b>Gamers take up the Nvidia story.</b> Gaming outlets cast the WSJ report as the reason consumer GPUs stayed expensive. More careful analyses point out that no filing shows a deliberate scarcity strategy, and that the guarantees Nvidia has disclosed cover land, power and data-centre shells. The argument is now over whether demand was real or financed.</p><p class="meta">Gaming press, r/hardware-style threads, Mastodon · high · <a href="https://gamerant.com/nvidia-jensen-huang-gpu-prices-ai-startup-deals/">GameRant</a> · <a href="https://windowsforum.com/news/nvidia-ai-startup-financing-and-gpu-shortage-claims-what-the-evidence-shows.452377/">WindowsForum analysis</a></p></div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>Ropedia's Xperience 2 dataset for physical AI.</b> A preprint submitted on Nov 12 releases a dataset that pairs 3D scans of real environments with first-person video of people doing tasks. This is the kind of embodied data robot foundation models are short of, and it comes the same week OpenAI folded its robotics team into general research and Agile Robots raised $500M. If labs start citing it as a training or eval set, it could become a reference dataset for embodied AI. <a href="https://casrai.org/news/ropedia-xperience-2-physical-ai-data-preprint-2026">CASRAI</a></p>
+<p class="meta">Compiled 15 Nov 2026, covering roughly the previous 24 hours (Nov 14–15 UTC), plus items from Nov 12–13 that were still drawing discussion.</p>
+</footer>
+</body></html>
