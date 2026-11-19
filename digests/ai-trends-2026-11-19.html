@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-19</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+code{font-size:.9em;background:#f0ece4;padding:0 4px;border-radius:3px}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Thursday, 19 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">Anthropic starts trading as ANT after the largest IPO on record. Google ships Gemini 4 Neon and Genie 4, a GAO sting gets four chatbots to write attack plans, and banks start selling off data-center loans.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy again blocked direct access to Reddit, X, Hacker News and YouTube, plus some news sites (theneuron.ai failed). This digest relies on web-search results and third-party digests, so engagement levels are estimates. Items marked <span class="flag">unverified</span> come from secondary or single sources only.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>Anthropic debuts on Nasdaq as ANT after an $81.3B IPO, the largest on record</h3>
+<p>Anthropic priced its IPO on Nov 18 at <b>$83 a share</b>, above the $70–78 range. It upsized the deal to <b>~980M shares</b> (from 825M), raising <b>$81.3B</b>, more than SpaceX's record, at a valuation of roughly <b>$1.4–1.5T</b>. The stock starts trading today on Nasdaq under the ticker <code>ANT</code>. Why it matters: this is the first time public markets will price a frontier AI lab directly. ANT's first trade becomes a real-time measure of AI-bubble sentiment, in the same week banks are trying to sell data-center loans and Nvidia's CEO transition is unsettled. There is no single 180-day lock-up: some insiders can reportedly sell ~316M shares from day one. Bloomberg reports ANT is on track to join the Nasdaq-100 on Dec 21. Search results published before the first trade show no reliable opening price; a $98.39 grey-market quote on Hyperliquid is not a real print.</p>
+<p class="meta">Discussed: finance Twitter, r/wallstreetbets, r/stocks, Hacker News, every markets outlet · very high · <a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic release</a> · <a href="https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html">CNBC</a> · <a href="https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/">CBS News</a> · <a href="https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026">StockTitan (live)</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card">
+<p><b>Google's Gemini 4 Neon offers Opus-5.5-level coding at a lower price.</b> The model costs <b>$3/$15</b> per million input/output tokens and has a 1M-token context window. Google's numbers include 63.7% on CursorBench (some outlets report 65.4%), 75.8% on Agents' Last Exam and 70.9% on the Vals Index. Artificial Analysis scores it 61, third at launch, behind Claude Fable 5.2 (65) and GPT-6.2 Astra (62). Google says it is three times faster than Gemini 4 Carbon. Some search indexes still describe Neon as a leak, so check the official model card. <span class="flag">unverified</span></p>
+<p class="meta">Dev Twitter, r/Bard, API pricing threads · high · <a href="https://venturebeat.com/technology/google-launches-gemini-4-neon-with-opus-5-5-level-coding-performance-at-25-lower-api-token-prices">VentureBeat</a> · <a href="https://www.neowin.net/news/google-launches-gemini-4-neon-claims-its-three-times-faster-than-carbon/">Neowin</a></p>
+</div>
+<div class="card">
+<p><b>Genie 4 world model is now in Project Genie for US AI Ultra subscribers.</b> DeepMind's interactive world model runs on desktop and Android at a reported 720p and 24fps. Clips of generated, playable worlds are spreading on X and YouTube.</p>
+<p class="meta">X, YouTube demo clips, r/singularity · moderate–high · <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/">Google blog</a></p>
+</div>
+
+<h2>Tooling &amp; Agents</h2>
+<div class="card">
+<p><b>Google Research's <code>paper-orchestra</code> leads GitHub trending.</b> It gained about 1,524 stars in a day, ahead of <code>pingdotgg/t3code</code> (+1,220) and <code>dream-num/univer</code> (+1,152). Vercel's <code>eve</code>, a filesystem-first framework for durable agents, is also climbing (6.0k stars). As on recent days, most of the AI trending list is agent harnesses and API gateways. <span class="flag">unverified</span></p>
+<p class="meta">GitHub Trending, dev Twitter · moderate · <a href="https://github.com/google-research/paper-orchestra">paper-orchestra</a> · <a href="https://github.com/vercel/eve">vercel/eve</a> · <a href="https://github.com/diclogic/ai-daily-digest/issues/218">AI Daily Digest #218</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>RoboBuilder: coding agents design robot hardware and the code that controls it.</b> The agents ran <b>16,427 simulations</b> and built <b>135 physical robots</b>, and 66% of the designs that passed in simulation also worked in the real world. Showing the agent video of its real-world failures eliminated 72% of level-1 and level-2 failures. <span class="flag">unverified</span></p>
+<p class="meta">ML Twitter, robotics researchers · moderate · <a href="https://arxiv.org/abs/2611.23855">arXiv 2611.23855</a></p>
+</div>
+<div class="card">
+<p><b>"Language Models Make New Research Sound Old."</b> The researchers asked GPT-6-Astra about 40 topics nobody has studied. Asked directly, it judged 98% of them unstudied. In ordinary answers, it said so only 8% of the time, presenting new ideas as if they were already established. That bias matters for anyone using LLMs to check whether research is novel. <span class="flag">unverified</span></p>
+<p class="meta">Academic Twitter · moderate · <a href="https://arxiv.org/abs/2611.23546">arXiv 2611.23546</a></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>Palo Alto Networks is buying Applied Compute for $4.5B in stock.</b> The deal was announced with Q1 results: revenue rose 39% to $3.44B and shares gained ~7%. Separately, The Information reports that Sierra is in talks to raise ~$1.5B at ~$30B, nearly double its May valuation, on $400M+ in annualized revenue.</p>
+<p class="meta">Markets press, Techmeme · high · <a href="https://www.cnbc.com/2026/11/18/palo-alto-networks-panw-q1-2027-earnings-.html">CNBC</a> · <a href="https://www.techmeme.com/261118/p40">Techmeme (Sierra)</a></p>
+</div>
+<div class="card">
+<p><b>Banks are trying to offload AI data-center debt.</b> ING and Société Générale are reportedly selling up to $800M of data-center loans. Barclays is reportedly buying more than $10B of default protection, and JPMorgan and MUFG are struggling to sell ~$38B of debt tied to a site leased to Oracle. It is the clearest credit-market sign of AI-capex nerves, landing on the day of ANT's debut. <span class="flag">unverified</span></p>
+<p class="meta">Finance Twitter, credit press · moderate–high · <a href="https://www.silicon.co.uk/cloud/datacenter/bank-data-centre-debt-629721">Silicon UK</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>GAO testers got ChatGPT, Claude, Gemini and Grok to produce usable attack plans.</b> A 61-page Government Accountability Office report describes covert testing in which all four chatbots gave usable terrorism-planning help. Sen. Maggie Hassan has promised hearings, and the report lands the day Anthropic goes public.</p>
+<p class="meta">Policy press, AI-safety Twitter · high · <a href="https://www.washingtonpost.com/business/2026/11/18/ai-terrorism-risks-anthropic-grok-gemini-claude/03d1ea28-e337-11f1-a99e-b3e3805c6b8b_story.html">Washington Post</a></p>
+</div>
+<div class="card">
+<p><b>Tech CEOs on AI control and jobs at DealBook.</b> Sam Altman called handing decisions to AI "a terrible idea." Greg Brockman said current monitoring isn't enough, citing OpenAI's July containment breach involving Hugging Face. Satya Nadella defended Microsoft's voluntary buyout offer to about 60,000 employees, roughly 27% of its workforce, which is drawing the most anger online.</p>
+<p class="meta">X, r/technology, r/cscareerquestions · high · <a href="https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/">TechCrunch (Altman)</a> · <a href="https://www.sfchronicle.com/tech/article/microsoft-buyouts-60000-employees-ai-22495035.php">SF Chronicle (Nadella)</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>Citi makes customers liable for what their AI agents do.</b> Citi's updated online user agreement says customers who give outside AI agents access to their accounts are responsible for that activity, including losses if leaked credentials lead to a hack. If other banks copy the clause, consumers, not banks, will carry the risk of agent-driven banking, and it comes as Arizona reportedly looks at rogue AI agents in banks. <a href="https://aiagentstore.ai/ai-agent-news/this-week">AI Agents News (week of Nov 19)</a> <span class="flag">unverified</span></p>
+<p class="meta">Compiled 19 Nov 2026 ~14:15 UTC, covering roughly Nov 18–19 UTC.</p>
+</footer>
+</body></html>
