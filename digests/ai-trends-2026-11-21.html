@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-21</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Saturday, 21 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">The AI trade breaks on the second day after Anthropic's IPO. The Nasdaq fell 5.3% and is now down for 2026. ANT ended just above its $83 offer price, and SoftBank lost 14.5% in Tokyo. Outside the markets: Gemini can now operate your Mac, Tencent released open Hy4 flash weights, and Canva added a switch to turn off its AI tools.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy blocked Reddit, X, Hacker News and YouTube, and this time it also blocked direct page fetches (theneuron.ai, dev.to, aitoolsrecap.com). Everything below comes from web-search result summaries, so engagement levels are estimates. Exact market figures varied between intraday and closing reports. GitHub's search API worked, but the week's top new AI repos were mostly low-signal, so none are included. Items marked <span class="flag">~N days old</span> come from just outside the 24h window. Covered in earlier digests and not repeated here: GPT-6.2 Astra/Sol, Gemini 4 Neon, and the GAO chatbot terror-plan report.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>The AI trade breaks: Nasdaq −5.3% and below zero for 2026; Anthropic falls 8.5% to $88.91</h3>
+<p>On its first full day of trading, ANT gave back most of its debut gain. It fell as much as 14% intraday and closed at <b>$88.91</b>, only about 7% above the <b>$83</b> IPO price, a day after closing at $97.17. The rest of the sector fell harder. The Nasdaq Composite dropped <b>5.28% to 22,617.73</b>, wiping out its 2026 gain, and it is now about <b>18% below its Oct 6 record</b>. The S&amp;P 500 (−3.7%) and the Dow both closed in correction. Nvidia and AMD each fell more than 13%, and Broadcom and Micron fell 12–14%. Why it matters: the record IPO was supposed to confirm AI valuations, but investors used it as a chance to take profits. The chip sector was already shaken by Nvidia's leadership scandal and the California AG subpoena, and it is now leading the decline. That makes the financing of the data-center buildout the main AI story going into next week.</p>
+<p class="meta">Discussed: finance Twitter, r/wallstreetbets, r/stocks, r/nvidia, Hacker News, all major markets outlets · very high · <a href="https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html">CNBC</a> · <a href="https://www.cnn.com/2026/11/20/investing/us-stocks-anthropic-ai">CNN</a> · <a href="https://www.cbc.ca/news/business/anthropic-ipo-markets-today-9.7429534">CBC</a> · <a href="https://cappnotes.substack.com/p/closing-look-friday-november-20-2026">Closing Look (Nov 20)</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card">
+<p><b>Tencent releases open weights for Hy4 flash: a 224B MoE with 12B active parameters and a 1M-token context.</b> Two days after launch, Tencent put three checkpoints on Hugging Face (instruct, FP8 and Base) under the Tencent Hy License, with code on GitHub. The 224B total includes 64B "Engram" parameters. The 770B flagship Hy4 is still not open, and reports disagree about its license and timing.</p>
+<p class="meta">r/LocalLLaMA, Hugging Face trending, AI Twitter · medium–high · <a href="https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/">Tencent</a> · <a href="https://x.com/AGTPinsights/status/2122973602576208235">AGTP on X</a> · <a href="https://beinsure.com/news/tencent-releases-hy4-flash-ai-model/">Beinsure</a> <span class="flag">~3 days old</span></p>
+</div>
+
+<h2>Tooling &amp; Agents</h2>
+<div class="card">
+<p><b>Gemini for Mac adds computer use: it runs native apps, local files and websites in a separate background window.</b> You start it with <i>@Computer use</i> in Task mode. Gemini writes a plan, shows a live preview in the chat, and asks before key actions. You choose which apps it can reach. It requires an Apple Silicon Mac on macOS 15+ and an AI Plus, Pro or Ultra subscription, and it is available in English in the US only, with work and school accounts excluded. It arrives the same week Apple added agent-specific permission prompts to macOS after the Muse incident.</p>
+<p class="meta">Mac/AI Twitter, r/GeminiAI, r/MacOS, tech press · high · <a href="https://siliconangle.com/2026/11/19/google-adds-computer-use-capabilities-to-geminis-mac-app/">SiliconANGLE</a> · <a href="https://cryptobriefing.com/google-gemini-macos-computer-use/">Crypto Briefing</a></p>
+</div>
+<div class="card">
+<p><b>Gemini Tasks is now free in six countries, and in the US the agent can phone businesses for you.</b> Tasks is free in the US, Japan, Korea, Canada, Australia and India, and Google says the rollout reaches "hundreds of millions" of people. In the US, Gemini places calls through Duplex, tells the business up front that it is an AI, and businesses can opt out. Small-business forums are already asking whether their phone lines are ready for agent callers. <span class="flag">~4 days old</span></p>
+<p class="meta">r/Android, r/GeminiAI, small-business forums · medium–high · <a href="https://www.androidauthority.com/google-gemini-tasks-update-3736266/">Android Authority</a> · <a href="https://www.androidcentral.com/apps-software/ai/google-just-made-its-best-gemini-agent-free-heres-where-you-can-get-it">Android Central</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>Using LLMs to audit science: an MIT and Dana-Farber team checked about 4,000 medical studies and found that code sharing is rare.</b> Language models screened the papers. When code was posted, it usually lacked the documentation needed to reuse it. The study, published in <i>Nature Medicine</i>, is feeding into TRIPOD-Code, a new reporting guideline. It is an example of AI being used for meta-science at scale rather than for producing papers.</p>
+<p class="meta">Research Twitter, MIT News · low–medium · <a href="https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119">MIT News</a> <span class="flag">~2 days old</span></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>SoftBank −14.5%, its worst day since August 2024; Kospi −5.2% as Anthropic's debut spreads selling across Asia.</b> SoftBank fell as much as 16% intraday. It has $64.6B invested in OpenAI, Anthropic's main rival, and coverage says Masayoshi Son regrets choosing OpenAI over Anthropic. In Tokyo, Tokyo Electron fell 7.1% and Lasertec 9.2%. In Seoul, Samsung fell 7.0% and SK Hynix 5.9%. Anthropic's listing gives public investors a direct, liquid way to own a frontier lab, and investors appear to be selling indirect holdings like SoftBank to fund it.</p>
+<p class="meta">r/stocks, finance Twitter, Nikkei/CNBC · very high · <a href="https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html">CNBC</a> · <a href="https://www.ibtimes.com/softbank-shares-fall-after-anthropic-ipo-3810013">IBTimes</a> · <a href="https://runtimewire.com/article/softbank-falls-16-as-anthropic-s-ipo-exposes-its-64-6b-openai-concentration">Runtime Wire</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>Canva adds a switch that turns off generative AI features, for both free and paid users.</b> The setting is at Settings → Permissions → "Enable generative AI features". It hides Magic Write, Magic Design, Dream Lab, Canva Code, chatbot image generation and other tools. Background Remover and Magic Grab stay on. A second option shows fewer AI-made templates. The switch is on by default and is rolling out gradually. It follows months of complaints from designers and is likely to add pressure on Adobe and others to offer a similar control.</p>
+<p class="meta">Designer Twitter/Bluesky, r/canva, r/graphic_design, 9to5Mac, PetaPixel · medium–high · <a href="https://9to5mac.com/2026/11/19/canva-introduces-new-controls-to-hide-generative-ai-features/">9to5Mac</a> · <a href="https://petapixel.com/2026/11/19/canva-now-lets-users-turn-off-generative-ai-features/">PetaPixel</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>Anthropic's 147M-share over-allotment option, now that ANT trades about 7% above its offer price.</b> Underwriters have 30 days to buy up to 147M more shares at $83. Exercising the full option would take the deal from about $81.3B to about $93.5B. At Thursday's $97, exercising was clearly worthwhile. With ANT at $88.91 and the sector falling, it is less certain. If ANT falls below $83, banks usually cover the extra shares by buying in the open market instead, which supports the price. Whether the option is exercised, and in full, will show whether underwriters expect ANT to hold its IPO price. <a href="https://investinglive.com/stocks/anthropic-confirms-83-ipo-price-on-980-million-shares-in-an-81-billion-deal/">investingLive</a> · <a href="https://www.renaissancecapital.com/IPO-Center/News/122776/anthropic-prices-upsized-ipo-at-83-above-the-range">Renaissance Capital</a></p>
+<p class="meta">Compiled 21 Nov 2026 ~14:30 UTC, covering roughly Nov 20–21 UTC.</p>
+</footer>
+</body></html>
