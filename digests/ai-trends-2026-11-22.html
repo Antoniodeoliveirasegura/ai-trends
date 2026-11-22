@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-22</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.empty{font-family:system-ui,sans-serif;font-size:.9rem;color:#666;font-style:italic}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Sunday, 22 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">A Claude-assisted proof of the Riemann Hypothesis passes its first formal checks, OpenRouter removes three inference providers after a canary study caught prompt theft, and a reported SEC accounting probe caps Nvidia's worst week since 2008.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy blocked Reddit, X, Hacker News and YouTube again, and direct page fetches failed (scientificamerican.com, dragos.com). Everything below comes from web-search summaries and the GitHub search API, so engagement levels are estimates. I could not confirm several circulating items and left them out: an "Inkling 2 Mini" open-weights release, a Trump threat of "tremendous penalties" for building data centers overseas, a 580,000-chip China approval, and an "11-minute" AI zero-day exploit. Already covered in earlier digests and not repeated here: the Anthropic IPO and the market selloff, Gemini computer use on Mac, and Tencent Hy4 flash.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>An Anthropic mathematician says he and Claude proved the Riemann Hypothesis, and the Lean community certified the formal proof within a day</h3>
+<p>On Nov 20, Levent Alpöge posted a four-page note and a very large Lean 4 library (one count puts it at about 175,000 files) that he says proves the Riemann Hypothesis, and also its generalized form. He says he found the proof with Claude. There is no conventional paper. On Nov 21 the Lean FRO and the Mathlib Initiative said they had "full confidence" that the proof is correct. Two independent tools, <i>comparator</i> and <i>con-leche</i>, reportedly confirmed that the final theorem matches Mathlib's statement of RH, and MIT's Andrew Sutherland reported that the code compiles using only Lean's three standard axioms. Why it matters: if this holds up, an AI-assisted, machine-checked proof will have settled the most famous open problem in mathematics. That would change how research mathematics gets done and how far we trust formal verification compared with peer review. Caveat: the certification shows that the code checks against the stated theorem. Mathematicians have not yet understood or reviewed the argument itself, which reportedly draws on the Langlands program and arithmetic geometry.</p>
+<p class="meta">Discussed: math and AI Twitter, r/math, r/singularity, Hacker News, Lean Zulip, mainstream science press · very high · <a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Scientific American</a> · <a href="https://startupfortune.com/lean-groups-certify-claude-assisted-riemann-hypothesis-proof-from-anthropic/">Startup Fortune</a> · <a href="https://officechai.com/ai/how-mathematicians-have-reacted-to-claimed-riemann-hypothesis-proof-by-anthropics-levent-alpoge/">Mathematician reactions (OfficeChai)</a> · <a href="https://www.nacionale.com/en/articles/when-will-we-know-riemann-hypothesis-proof-verified-alpoge-claude-lean-what-happens-next">What happens next</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<p class="empty">Quiet day. I found no confirmed frontier or major open-weights release in the last 24 hours.</p>
+
+<h2>Tooling &amp; Infrastructure</h2>
+<div class="card">
+<p><b>OpenRouter removes three inference providers and drops 125 endpoints from Zero Data Retention after a canary study caught prompt theft.</b> HD Moore's team at Dragos sent about 2M prompts containing unique fake secrets (AWS keys, SSH passwords, private Git URLs) between July and November. Attackers had breached three hosting providers and were reading customer prompts, and none of the three knew until Dragos told them. Dragos also found that one Chinese lab fetched the hidden links in more than half of the prompts sent to its models, including about two-thirds of requests marked no-retention (ZDR). No provider has been named. If you route through aggregators, pin your providers.</p>
+<p class="meta">Security Twitter, r/LocalLLaMA, LessWrong, The Hacker News · high · <a href="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html">The Hacker News</a> · <a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Dragos blog</a> · <a href="https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your">LessWrong: pin your provider</a></p>
+</div>
+<div class="card">
+<p><b><code>fast-anything</code>: "Don't rewrite it in Rust. Rewrite the 5% that's slow."</b> This new repo walks a coding agent through profiling a Python, Node or Ruby app, porting only the hot functions, and testing that the ported code behaves the same as the original. It shows coding agents being used for targeted, test-checked optimization rather than full rewrites.</p>
+<p class="meta">GitHub (created Nov 21, about 940★ in a day), dev Twitter · medium · <a href="https://github.com/EL4CTEO/fast-anything">GitHub</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>Open-source checking work around the RH proof.</b> The Lean community's <code>riemann-hypothesis</code> repo, which runs an independent comparator check of the theorem statement, has about 530★. A mirror of Alpöge's library has about 500★, and community "status dashboards" track who has checked what and map the route of the proof through the archive (one counts 17.4M lines of Lean). Outside mathematicians can now audit a frontier-AI result in public, in days rather than over years of peer review.</p>
+<p class="meta">GitHub, Lean Zulip, r/math · medium–high · <a href="https://github.com/leanprover-community/riemann-hypothesis">leanprover-community/riemann-hypothesis</a> · <a href="https://github.com/nasqret/riemann-rev">riemann-rev dashboard</a> · <a href="https://casrai.org/news/anthropic-levent-alpoge-claude-lean-riemann-hypothesis-claim-2026">CASRAI explainer</a></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>Reuters: the SEC is examining Nvidia's accounting, and the stock closes its worst week since 2008.</b> According to two people briefed on the matter, SEC enforcement staff are looking at potential accounting issues. The WSJ reports that the probe also covers whether Nvidia's disclosures misled investors. The scope and start date are unknown. Nvidia fell about 14% on Friday as selling picked up after the report. The probe adds to the California AG's subpoena and the turmoil after Huang's departure. An investigation does not establish wrongdoing.</p>
+<p class="meta">r/nvidia, r/stocks, finance Twitter, Reuters/Yahoo · very high · <a href="https://www.investing.com/news/economy-news/exclusiveus-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-5042460">Reuters via Investing.com</a> · <a href="https://investing.com/news/stock-market-news/nvidia-shares-fall-10-as-report-of-sec-accounting-probe-adds-to-pressure-5042464">Worst week since 2008</a> · <a href="https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html">Yahoo Finance</a> <span class="flag">~2 days old</span></p>
+</div>
+<div class="card">
+<p><b>Amazon is reportedly close to buying Decart for about $7.5B.</b> Weekend digests cite the FT. In October the WSJ reported talks at about $7B, and CTech reported a possible $5.5B valuation. Decart's software helps make model training more chip-efficient and lets developers switch between chip vendors. Anthropic reportedly explored a $6B deal earlier and walked away. Treat the "near deal" framing as unconfirmed.</p>
+<p class="meta">Business press, tech newsletters · medium · <a href="https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/">TechRepublic (Oct talks)</a> · <a href="https://aienews.org/digest/2026-11-22/">AI eNews digest (Nov 22)</a> <span class="flag">single-source update</span></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>Who gets the credit, and what does "verified" mean?</b> The RH claim set off two debates. Mathematicians are asking whether the Lean statement really is RH and whether a proof nobody yet understands counts as mathematics. AI Twitter is arguing about credit: Terence Tao reportedly said Alpöge deserves as much credit as Claude. Skeptics point out that the author works for the company whose model was used, and that the company listed on Nasdaq this week.</p>
+<p class="meta">Math Twitter, r/math, r/singularity, Substack · high · <a href="https://officechai.com/ai/how-mathematicians-have-reacted-to-claimed-riemann-hypothesis-proof-by-anthropics-levent-alpoge/">OfficeChai roundup</a> · <a href="https://www.thealgorithmicbridge.com/p/ai-just-cracked-the-hardest-problem">The Algorithmic Bridge</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>OpenAI says its models rewrote AMD GPU circuits and found up to 14% PPA gains in five months.</b> The models rewrote SystemVerilog RTL against heavily optimized baselines, and AMD has already sent some of the changes to manufacturing. OpenAI also reports single-digit gains on a next-generation AMD CPU. The figures are self-reported best cases, and OpenAI holds warrants on AMD shares. Still, it is a concrete example of models helping design the chips that train them. <a href="https://thenextweb.com/news/openai-models-amd-gpu-chip-design-14-percent">The Next Web</a> · <a href="https://cornfordandcross.com/digital-ai-art/openai-s-amd-chip-design-figure-what-the-up-to-14-refers-to/">What the 14% refers to</a> <span class="flag">~4 days old</span></p>
+<p class="meta">Compiled 2026-11-22 14:00 UTC by an automated routine.</p>
+</footer>
+</body></html>
