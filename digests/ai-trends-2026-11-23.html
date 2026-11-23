@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-23</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Monday, 23 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">OpenAI's chief scientist proposes perplexity as an industry-wide "speed limit," Hacker News argues over an AI-designed CPU and a paper on models that edit their own weights, and Nvidia rebounds as Trump pushes for Jensen Huang's return.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy again blocked Reddit, X, Hacker News and YouTube, and direct page fetches failed. Everything below comes from web-search summaries, the GitHub search API, and auto-generated Hacker News digests published on GitHub. Engagement figures are estimates, and HN scores are taken from those digests. Already covered in earlier digests and not repeated here: the Riemann Hypothesis claim, OpenRouter's provider removals, the SEC probe into Nvidia, and Meta Muse reading Signal messages.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>OpenAI publishes its pretraining loss curve and proposes perplexity as a shared limit on frontier AI development</h3>
+<p>In "Perplexity and Intelligence" (Nov 22), chief scientist Jakub Pachocki published OpenAI's internal held-out pretraining perplexity from GPT-3.5 onward. He argues that the metric tracks capability: according to coverage, losses below about 0.8 coincided with new abilities in cybersecurity and mathematics, and OpenAI expects further "transformative" capabilities at roughly 0.68–0.7 log-perplexity. He proposes that labs commit to common limits, based on perplexity and other measurements, that they would not cross until monitoring of AI behavior reaches certain milestones. Why it matters: a frontier lab is offering a single number that could be audited and written into treaties or regulation, rather than benchmark scores that are easy to game. Caveats: critics point out that pretraining loss misses gains from reasoning, RL, tools and scaffolding, which is where much of the recent progress has come from. The figures are also OpenAI's own and come from an evaluation set nobody else can see.</p>
+<p class="meta">Discussed: Hacker News (about 480–510 pts, 330–350 comments), AI-policy Twitter, tech press · high · <a href="https://openai.com/index/perplexity-and-intelligence/">OpenAI essay</a> · <a href="https://officechai.com/ai/openai-wants-perplexity-to-become-the-industrys-shared-yardstick-for-ai-progress-and-safety-limits/">OfficeChai</a> · <a href="https://www.fonearena.com/blog/497382/openai-perplexity-metric-measure-ai-progress.html">FoneArena</a> · <a href="https://news.ycombinator.com/item?id=50601525">HN thread</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card">
+<p><b>Thinking Machines' Inkling 2 Mini is the top AI post on HN this weekend.</b> Artificial Analysis lists it as an open-weights looped transformer scoring 20 on its Intelligence Index, on the Pareto frontier for intelligence against active parameters. Commenters like the efficiency but are skeptical about cherry-picked benchmarks and long-context performance. A beginner's guide to running Inkling, Qwen and Unsloth locally is also trending. Yesterday's digest left this out as unconfirmed. Parameter count and license are still unverified.</p>
+<p class="meta">Hacker News (about 1,450 pts, 290 comments), r/LocalLLaMA · high · <a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines</a> · <a href="https://news.ycombinator.com/item?id=50581260">HN thread</a> · <a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth">Local AI guide</a> <span class="flag">~3 days old</span></p>
+</div>
+
+<h2>Tooling</h2>
+<div class="card">
+<p><b>Together AI: a coding agent committed a credential, and an attacker downloaded stored customer prompts.</b> The agent was working on Together's public <code>xorl</code> repo when it committed a credential that unlocked a private Hugging Face repo. That repo held June–July prompt samples from MiniMax M3, GLM-5.2 and Kimi K2.6. The intruder searched the samples for more secrets and tested some of them. Together has moved to short-lived scoped credentials and made zero data retention the default for new accounts. If you sent secrets to those models on Together, rotate them.</p>
+<p class="meta">Hacker News, security Twitter, dev.to · medium · <a href="https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026">Together disclosure</a> · <a href="https://futurumgroup.com/insights/together-ais-agent-credential-leak-exposes-agentic-pipeline-risk/">Futurum analysis</a> <span class="flag">~2 days old</span></p>
+</div>
+<div class="card">
+<p><b><code>skill-distill</code>: turn a good Claude Code or Codex session into a skill that an open-weight model can follow.</b> The repo extracts a successful frontier-agent run into a reusable skill file, so a cheaper local model can repeat the task. It is one of the fastest-rising AI repos of the weekend.</p>
+<p class="meta">GitHub (created Nov 21, about 485★) · medium · <a href="https://github.com/sybil-solutions/skill-distill">GitHub</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>"Language Models Can Rewrite Their Own Weights."</b> In arXiv 2611.21885, an open 27B model is given its own weights, its graded answers and the ability to run itself. It edits its weights directly, with no gradient training, and reportedly improves by 6.6 points on held-out problems. The authors say the effect grows with model scale. The HN thread is split between "a path to continual learning" and "an alignment problem in preprint form." These are the authors' own claims and have not been reproduced.</p>
+<p class="meta">Hacker News (about 490 pts, 145 comments), ML Twitter · medium–high · <a href="https://arxiv.org/abs/2611.21885">arXiv</a> · <a href="https://news.ycombinator.com/item?id=50577265">HN thread</a></p>
+</div>
+<div class="card">
+<p><b>Frostbite: Architect Labs says its AI agents designed a CPU end to end, from ISA to layout.</b> The CPU is built around interaction nets and programmed in Vine, a Rust-like language that compiles to Ivy. The company says it delivers 4.59× the performance per watt of an unnamed dual-issue in-order core across 25 workloads. The design was synthesized at 7 nm with timing closed at 500 MHz. No silicon exists yet, there is no independent check, and it cannot run x86 or Arm binaries. Hardware engineers on HN are questioning how it was verified.</p>
+<p class="meta">Hacker News (about 680 pts, 360 comments), hardware press · high · <a href="https://architectlabs.com/blog/frostbite">Architect Labs</a> · <a href="https://www.marktechpost.com/2026/11/23/architect-labs-frostbite-ai-designed-cpu-interaction-nets/">MarkTechPost</a> · <a href="https://hwbusters.com/news/frostbite-cpu-was-designed-end-to-end-by-ai-agents-and-architect-labs-claims-4-59x-the-perf-w-of-an-in-order-core/">Hardware Busters</a> <span class="flag">announced Nov 18, peaked this weekend</span></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>Nvidia bounces about 9% at Monday's open after Trump urges the board to bring back Jensen Huang.</b> On Sunday, Trump posted on Truth Social that reinstating Huang would be "the best thing for the Company, and also, for the U.S.A." Board chair Harvey Jones has said there are no plans to do that. Kalshi puts the chance of Huang returning at about 10%. Nasdaq 100 futures rose about 3.5% after Friday's correction, when Nvidia closed 47.5% below its October peak. Dell reports earnings tomorrow, which will be the next test for AI hardware demand.</p>
+<p class="meta">r/stocks, r/nvidia, finance Twitter, mainstream press · very high · <a href="https://www.washingtonpost.com/technology/2026/11/23/trump-urges-nvidia-reinstate-jensen-huang-calling-him-best-thing-us/">Washington Post</a> · <a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-091118583.html">Yahoo Finance live</a> · <a href="https://www.nbcnews.com/business/markets/stocks-rebound-ai-tech-selloff-nvidia-rcna610833">NBC News</a> · <a href="https://news.kalshi.com/p/nvidia-ceo-odds-trump-jensen-huang-second-chance">Kalshi odds</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>Trump and Xi reportedly agree that humans must stay in control of major military AI decisions.</b> Treasury Secretary Bessent says the two leaders agreed at their meeting in Shenzhen that AI should never take "autonomous major military actions." Xinhua quotes Xi as saying AI must "remain under human control." No joint text has been released, and nobody has defined what counts as a "major action." Policy circles are reading it as the first US–China statement on military AI under this administration.</p>
+<p class="meta">Policy Twitter, Asian and US press · medium–high · <a href="https://www.scmp.com/news/china/diplomacy/article/3375321/xi-trump-agree-military-ai-decisions-must-involve-humans-bessent-says">SCMP</a> · <a href="https://www.bloomberg.com/news/articles/2026-11-20/trump-xi-agreed-on-ai-limits-in-military-action-bessent-says">Bloomberg</a> · <a href="https://www.digitimes.com/news/a20261123PD223/military-donald-trump-xi-jinping-chips-shenzhen.html">DigiTimes (Nov 23)</a> <span class="flag">~3 days old</span></p>
+</div>
+<div class="card">
+<p><b>"87% of Anthropic's power will come from gas and 11% from coal in 2028" is HN's most-commented AI thread.</b> The post breaks down bring-your-own-power deals against grid power for AI data centers. Together with Brian Merchant's "AI is becoming a disaster for the climate," it has moved weekend discussion from capability to cost. Thread sentiment: "can we afford, trust and contain this?"</p>
+<p class="meta">Hacker News (about 880 pts, 890 comments), climate Twitter, Substack · high · <a href="https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/">Better Data Center Project</a> · <a href="https://news.ycombinator.com/item?id=50597612">HN thread</a> · <a href="https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the">Blood in the Machine</a> <span class="flag">post from Nov 16, blew up this weekend</span></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>Signal formally asks mobile OS makers to let apps block AI agents from capturing their data.</b> After the Muse findings, Signal is now proposing a specific fix: an OS-enforced flag that marks an app's content as off-limits to agents using screen capture, accessibility or notification access. The proposal drew a large, broadly supportive HN thread (about 580 pts), but the press has barely covered it. If Apple or Google adopt anything like it, that would set the first platform-level boundary for on-device agents. <a href="https://signal.org/blog/protecting-your-privacy/">Signal blog</a> · <a href="https://news.ycombinator.com/item?id=50572348">HN thread</a></p>
+<p class="meta">Compiled 2026-11-23 14:00 UTC by an automated routine.</p>
+</footer>
+</body></html>
