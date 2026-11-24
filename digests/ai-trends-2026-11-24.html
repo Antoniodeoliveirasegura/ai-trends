@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-24</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Tuesday, 24 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">Nvidia's board brings back Jensen Huang and the AI trade has its best day in decades. Also: Z.ai ships the first flagship "loop transformer," OpenAI and Cisco release agent-written kernel shields, and LeCun's attack on Amodei is the day's most-argued thread.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy blocked Reddit, X, YouTube and most direct page fetches, including z.ai and openai.com. Everything below comes from web-search summaries, the GitHub search API, and auto-generated Hacker News, arXiv and AI news digests published on GitHub. HN scores come from those digests and are approximate. Already covered in earlier digests and not repeated here: the perplexity "speed limit" essay, Inkling 2 Mini, Frostbite, Together AI's credential leak, and Anthropic's energy mix.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>Nvidia's board unanimously reinstates Jensen Huang, 12 days after his resignation. Nvidia rose 31.5%, its biggest one-day gain in over two decades.</h3>
+<p>On Nov 23, Nvidia's board reinstated Huang as president, CEO and director, effective immediately. The board said it had "input from senior levels of the United States government" and was confident he poses no national-security risk, which reversed chair Harvey Jones's statement days earlier that it would not bring him back. Trump later said he was "represented in the board meeting." The market treated it as a relief rally. Nvidia added roughly $900B in value, the Nasdaq rose about 6.5–7%, and Dell jumped about 20% ahead of tonight's earnings. Nvidia then slipped about 5% on Tuesday. <b>Why it matters:</b> the world's most important AI-chip company reversed itself on a national-security question about its founder under pressure from the White House, while SEC and DOJ probes are still open. Nvidia also says it will hire a new Chief Compliance Officer. The rally doesn't settle last week's real question, which is whether AI capex will earn enough to justify the debt paying for it, and Nvidia is still down about 39% over the past month.</p>
+<p class="meta">Discussed: r/stocks, r/nvidia, finance Twitter, every major outlet · very high · <a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director">Nvidia release</a> · <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm">8-K</a> · <a href="https://www.nbcnews.com/tech/tech-news/nvidia-reinstates-jensen-huang-rcna610864">NBC</a> · <a href="https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump">NPR</a> · <a href="https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-jensen-huang-reinstated-as-ceo-trump-says-he-convinced-board-165423793.html">Yahoo live</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card">
+<p><b>Z.ai's GLM-5.4 is the first flagship model built as a "loop transformer."</b> Instead of adding layers, it runs a 28-layer block twice inside a roughly 750B base. Z.ai claims performance comparable to 2–3T-parameter models and says it validated the design at 1B, 4B, 30B and 750B. Z.ai published no benchmark scores at launch. Its internal evaluation shows 51% wins against GLM-5.3, and independent KingBench 4 ranks it 7th of 19. There is no API and no open weights yet; access is limited to GLM Coding Plan subscribers. HN is excited about the architecture and wants the numbers.</p>
+<p class="meta">Hacker News (about 1,100 pts, 359 comments), r/LocalLLaMA · high · <a href="https://z.ai/blog/glm-5.4">Z.ai blog</a> · <a href="https://news.ycombinator.com/item?id=50609685">HN thread</a> · <a href="https://winbuzzer.com/2026/11/23/zhipus-glm-5-4-adds-image-input-for-coding-xcxwbn/">WinBuzzer</a></p>
+</div>
+<div class="card">
+<p><b>Ant Group open-sources LingSante-3.1-flash, a 560B medical MoE under the MIT license.</b> About 25B parameters are active per token. A 124B multimodal sibling, LingSante-3.1-air-VL, is also on Hugging Face under the inclusionAI organization. Ant says it beats GPT-6 Astra, Claude Opus 5.5 and Gemini 4 Argon on three benchmarks, all from its own internal testing. The model card advertises 1M-token context, but the shipped config caps it at 262K.</p>
+<p class="meta">Hugging Face, Asian tech press · medium · <a href="https://technode.global/2026/11/24/ant-group-open-weight-lingsante-medical-ai-models/">TechNode</a> · <a href="https://www.unite.ai/ant-group-begins-open-weight-release-of-lingsante-medical-ai-models/">Unite.AI</a></p>
+</div>
+
+<h2>Tooling</h2>
+<div class="card">
+<p><b>Shirudo: OpenAI and Cisco open-source a Linux runtime in which agents write eBPF "shields" that block exploits on unpatched, running servers.</b> The pitch is to close the gap between disclosure and patch rollout without restarting services. In Cisco's demo, a shield written with Codex blocked a Java4Shell exploit against Elasticsearch. It is BSD-2 licensed and descends from Tetragon. The project is pre-release, and production use needs a patched kernel and TPM 2.0. Agent-written code running in the production kernel path is the part to watch.</p>
+<p class="meta">GitHub (about 1,340★), Hacker News (about 60 pts), security Twitter · medium · <a href="https://openai.com/index/introducing-shirudo/">OpenAI</a> · <a href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-and-openai-launch-shirudo-a-new-project-to-safeguard-agentic-ai.html">Cisco newsroom</a> · <a href="https://github.com/shirudo-dev/shirudo">GitHub</a> · <a href="https://news.ycombinator.com/item?id=50619630">HN</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>DeepMind and Google Quantum AI: Gemini agent teams find quantum programs that a Lean 4 prover checks for both correctness and resource cost.</b> The teams shared a wiki of verified Lean files and dead ends, and met every four hours in scheduled "conferences." The headline result is a roughly 290× resource reduction for computing arcsine, with about 11× and 8× gains on two chemistry and physics simulations. The library is public. These are analytic estimates, and nothing ran on quantum hardware.</p>
+<p class="meta">ML and quantum Twitter, tech press · medium · <a href="https://arxiv.org/abs/2611.09822">arXiv 2611.09822</a> · <a href="https://github.com/google-deepmind/formal-quantum-computation">GitHub</a> · <a href="https://thequantuminsider.com/2026/11/10/google-researchers-use-ai-and-mathematical-proofs-to-cut-quantum-computing-requirements/">Quantum Insider</a> <span class="flag">preprint ~2 wks old, announced Nov 23</span></p>
+</div>
+<div class="card">
+<p><b>CoEvoBench (Alibaba): can an LLM improve both a model and its agent harness, and then keep improving?</b> Frontier models act as the "researcher." Each gets a 9B base model, a harness and 24 hours. The best closed more than 80% of the gap to an instruction-tuned reference, but the authors find that models make one strong improvement and then can't use feedback from the improved system to make the next one. That is a measured result on recursive self-improvement, a question argued mostly in rhetoric all month.</p>
+<p class="meta">arXiv, ML Twitter · low–medium · <a href="https://arxiv.org/abs/2611.27116">arXiv 2611.27116</a> · <a href="https://github.com/AlibabaResearch/CoEvoBench">GitHub</a></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>Dell reports after today's close, the first earnings test of the AI rebound.</b> The stock rose about 20% on Monday in the Huang rally. Consensus is $6.61 EPS on $49.2B revenue, and options imply a move of about 17% either way. The result will be read as a signal on AI server demand and margins, and it lands before AWS re:Invent opens Nov 30.</p>
+<p class="meta">r/stocks, finance Twitter, financial press · high · <a href="https://www.benzinga.com/trading-ideas/movers/26/11/63545302/dell-stock-rallies-20-ahead-of-earnings-whats-happening">Benzinga</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/dell-q3-preview-margins-outlook-081440105.html">Yahoo preview</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>Yann LeCun says Dario Amodei is "hyping the dangers so OSS models are illegal and he stays in control."</b> He was replying on X to an undated clip that turned out to be Amodei's July 2023 Senate testimony. Amodei has since said Anthropic isn't seeking a ban on open models and that his concern is advanced weights reaching China. The motive is LeCun's inference. Days after Anthropic's IPO, it is the clearest public statement yet of the open-weights versus frontier-lab split over who sets safety rules.</p>
+<p class="meta">Hacker News (about 1,370 pts, 756 comments, most-commented story Nov 23), X · high · <a href="https://fourweekmba.com/ai-lecun-says-amodei-hypes-ai-danger-to-outlaw-open-models/">FourWeekMBA</a> · <a href="https://dealroom.co/news/159797-yann-lecun-on-ai-risk-effective-altruism-dario-amodei-and-building-ami-l/">Dealroom</a></p>
+</div>
+<div class="card">
+<p><b>Virginia and Oregon sue Musk's companies over sexualized images of real people made with Grok.</b> The suits are separate but run in parallel under state consumer-protection law. They name SpaceX, X and SpaceX Super Intelligence, allege the companies misrepresented Grok's safeguards, and seek penalties and court-ordered guardrails. Virginia's threat first appeared in a SpaceX securities filing in October. These are the first state suits filed over Grok imagery.</p>
+<p class="meta">Policy and legal Twitter, mainstream press · medium–high · <a href="https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html">CNBC</a> · <a href="https://www.mlex.com/mlex/articles/2541984">MLex (Oct background)</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>"Who Grades the Agent?" SplitBench puts privilege separation into coding-agent benchmarks.</b> Today's coding benchmarks grade by running the agent's own code, so the thing being measured controls the measuring tool. SplitBench moves the expected answers to a trusted grader, so an agent that controls the whole test environment still can't fake a pass. A secondary write-up reports 98.7% agreement with native graders. As labs report bigger agent scores every week, this is the kind of plumbing that decides which scores to believe. <a href="https://arxiv.org/abs/2611.27860">arXiv 2611.27860</a> · <a href="https://dev.to/aahyouoos/can-you-trust-a-coding-agents-benchmark-score-4d00">DEV write-up</a></p>
+<p class="meta">Compiled 2026-11-24 14:30 UTC by an automated routine.</p>
+</footer>
+</body></html>
