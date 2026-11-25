@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-25</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.empty{font-family:system-ui,sans-serif;font-size:.88rem;color:#777;font-style:italic}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Wednesday, 25 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">Monday's relief rally is over. Anthropic closes below its IPO price, SoftBank falls about 14% in Tokyo, and Dell's blowout quarter is the one bright spot. Also: an OpenAI preprint claims matrix multiplication is exactly n<sup>9/4</sup>, Anthropic ships Claude Ship, and HN's biggest argument is about whose side your agent is on.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy blocked Reddit, X, YouTube and direct page fetches, including techcrunch.com and the usual daily-roundup sites. Everything below comes from web-search summaries and the GitHub search API, including auto-generated Hacker News digests published as GitHub issues. HN scores come from those digests and are approximate. Already covered and not repeated: GLM-5.4, Shirudo, the Riemann-hypothesis claim, and Huang's reinstatement.</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>Anthropic closes below its $83 IPO price four trading days after listing, and the AI sell-off spreads to Asia, with SoftBank falling about 14%.</h3>
+<p>ANT fell 6.5% on Tuesday to close at $81.91, after first breaking the offering price premarket. CNBC notes it took SpaceX 21 trading days to do the same. Options implied volatility rose to about 96. Filings released Monday showed Dario and Daniela Amodei each sold about $280M of stock in the IPO, which became the second story HN read the drop through. The Nasdaq resumed its slide with Nvidia, and on Wednesday SoftBank fell roughly 14–16% in Tokyo, by reports, while Tokyo Electron, Advantest, Samsung and SK Hynix also dropped sharply. <b>Why it matters:</b> the year's defining AI listing is now a live gauge of public-market appetite for frontier labs. Breaking issue this fast makes the AI-capex debate concrete, and with a lock-up that could free up to about 303M shares in December, the pressure may not be over. Analysts remain constructive, with Oppenheimer at a $150 target and Canaccord at $135.</p>
+<p class="meta">Discussed: Hacker News (about 362 pts, 715 comments, most-commented industry story), r/stocks, finance Twitter, every major outlet · very high · <a href="https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading">Bloomberg</a> · <a href="https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html">CNBC</a> · <a href="https://www.forbes.com/sites/siladityaray/2026/11/24/anthropic-ceo-dario-amodei-sold-280-million-in-shares-as-part-of-record-ipo/">Forbes on insider sales</a> · <a href="https://newslantern.com/news/25396/2026-11-25/softbank-plunges-14-8-in-tokyo-as-global-ai-selloff-erases-over-200">SoftBank drop</a> · <a href="https://news.ycombinator.com/item?id=50627836">HN thread</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<p class="empty">I found no major new frontier model release in the last 24 hours. GLM-5.4 still dominates Hacker News (about 1,170 pts) but was covered yesterday.</p>
+
+<h2>Tooling</h2>
+<div class="card">
+<p><b>Claude Ship: Anthropic hands code review, CI fixes and merge approval to agents.</b> It combines Code Review, which is generally available, with two betas. PR Steward fixes failing CI, merge conflicts and review feedback. Claude Approvals applies team-defined merge policy, and Anthropic recommends starting it in observe-only mode. A new <code>/ship</code> command in Claude Code pushes changes, opens the PR and runs the loop. It is for Team and Enterprise customers whose code is on GitHub. Anthropic warns that it can miss bugs and security issues.</p>
+<p class="meta">Dev Twitter, tech press, DEV Community · medium–high · <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a> · <a href="https://siliconangle.com/2026/11/23/anthropics-claude-ship-automates-the-final-stage-of-the-software-development-pipeline">SiliconANGLE</a> · <a href="https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code">Decrypt (skeptical take)</a></p>
+</div>
+<div class="card">
+<p><b>"A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth" keeps climbing HN.</b> The practical guide to running and fine-tuning local models went from about 199 to about 773 points in a day. It rides demand for Inkling 2 Mini and the Qwen3.8-27B GGUF family, which leads Hugging Face trending with about 7.8M downloads.</p>
+<p class="meta">Hacker News (about 773 pts, 313 comments), r/LocalLLaMA · high · <a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth">Guide</a> · <a href="https://news.ycombinator.com/item?id=50603845">HN thread</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>OpenAI preprint claims the matrix-multiplication exponent is exactly 9/4, with an upper bound and a matching lower bound.</b> The Nov 24 paper in the <code>openai/math</code> repo extends an October upper-bound result to every field. It also proves that n×n matrices need at least ⌈n<sup>9/4</sup>/2⌉ nonscalar gates. The previous best upper bound was about 2.3712. The Lean formalization covers only division-free circuits, so the strongest "every field" claim is not fully machine-checked. The paper is unreviewed, and it has no near-term effect on GPU matmul.</p>
+<p class="meta">Hacker News (about 255 pts, 103 comments, top research item), math and ML Twitter · high <span class="flag">unreviewed</span> · <a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/README.md">openai/math README</a> · <a href="https://www.unite.ai/openai-preprint-reports-9-4-bound-for-matrix-multiplication/">Unite.AI</a> · <a href="https://news.ycombinator.com/item?id=50637220">HN thread</a></p>
+</div>
+<div class="card">
+<p><b>OpenAI says GPT-6 models can design proteins without task-specific fine-tuning.</b> The claim is that general frontier LLMs now design proteins that once needed specialist models like GPT-4b micro. HN is split between "emergent capability" and "favorable eval framing," and the biosecurity angle is obvious.</p>
+<p class="meta">Hacker News (about 205 pts, 61 comments), bio and ML Twitter · medium <span class="flag">not independently verified</span> · <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">OpenAI</a> · <a href="https://news.ycombinator.com/item?id=50634658">HN thread</a></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>Dell's quarter answers the demand question: $54.9B in revenue (+103%) and $22.0B in AI server revenue (+291%).</b> Dell booked $60.2B in AI orders, ended with a record $132.3B AI backlog, and raised full-year guidance to $202B, with $78B from AI servers. It also added $25B to its buyback. Expectations had been about $49.3B. It is the strongest demand-side data point against the bubble narrative, even as AI stocks fell around it.</p>
+<p class="meta">r/stocks, finance Twitter, financial press · high · <a href="https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results">Dell release</a> · <a href="https://longbridge.com/en/news/306698607">Longbridge analysis</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>"LLM agents work for their parent companies, not for you" is HN's dominant debate.</b> The essay argues that agent incentives such as ads, upsell and lock-in are structurally misaligned with users. Commenters largely agree, and the thread branches into self-hosting and regulation.</p>
+<p class="meta">Hacker News (about 944 pts, 392 comments, most-commented thread) · high · <a href="https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/">Essay</a> · <a href="https://news.ycombinator.com/item?id=50627340">HN thread</a></p>
+</div>
+<div class="card">
+<p><b>Ask HN: "Anthropic is accusing my company of distilling. How can I prove I'm not?"</b> A founder's post opens up the unresolved question of how model provenance is proved. Commenters debate evidentiary standards and whether distillation accusations chill smaller labs.</p>
+<p class="meta">Hacker News (about 235 pts, 174 comments) · medium–high · <a href="https://news.ycombinator.com/item?id=50630809">HN thread</a></p>
+</div>
+<div class="card">
+<p><b>New York's five-year ban on AI chatbot toys becomes a holiday-shopping story.</b> Governor Hochul is promoting the moratorium (S9408A/A11144B) on AI chatbot toys for children 12 and under as holiday shopping starts. The attorney general can seek fines of up to $15K per day. It is the first state-level ban on a category of consumer AI product.</p>
+<p class="meta">Hacker News (about 30 pts), policy Twitter, local press · low–medium · <a href="https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot">NY Governor</a> · <a href="https://www.nysenate.gov/newsroom/press-releases/2026/andrew-gounardes/sen-gounardes-moratorium-ai-chatbot-toys-passes-state">Senate background</a> · <a href="https://news.ycombinator.com/item?id=50635246">HN</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>Compiling web apps into verified operations for AI agents.</b> Protocolis proposes replacing screenshot- and DOM-driven browsing with a compiled, verified set of operations an agent may perform on a web app. That would make agent actions checkable before they run. Engagement is small (about 33 HN points), but it pairs with Greptile's "How should an LLM see a computer?" (about 58 pts). Both point to the same shift: computer-use agents moving from imitating humans to working against typed interfaces. · <a href="https://protocolis.co/paper/">Paper</a> · <a href="https://news.ycombinator.com/item?id=50632998">HN</a> · <a href="https://www.greptile.com/blog/trex-computer-use">Greptile</a></p>
+<p class="meta">Compiled 2026-11-25 by an automated routine.</p>
+</footer>
+</body></html>
