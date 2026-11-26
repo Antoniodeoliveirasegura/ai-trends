@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Trends — 2026-11-26</title>
+<style>
+body{font-family:Georgia,"Times New Roman",serif;background:#faf8f4;color:#1c1c1c;max-width:720px;margin:0 auto;padding:48px 20px;line-height:1.55}
+h1{font-size:2.4rem;margin:4px 0 0;letter-spacing:-.01em}.date{color:#777;font-family:system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+.dek{font-style:italic;color:#555;margin:6px 0 0}
+.note{background:#fff3cd;border-left:4px solid #d9a400;padding:12px 16px;font-family:system-ui,sans-serif;font-size:.88rem;margin:28px 0}
+h2{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a33;border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:44px}
+.lead h3{font-size:1.55rem;line-height:1.25;margin:10px 0}.lead p{font-size:1.12rem}
+.lead ul{font-size:1.02rem;padding-left:20px}.lead li{margin:6px 0}
+.card{background:#fff;border:1px solid #e5e0d6;border-left:3px solid #1c1c1c;padding:14px 18px;margin:14px 0}
+.card p{margin:4px 0}.meta{font-family:system-ui,sans-serif;font-size:.83rem;color:#666}
+.flag{font-family:system-ui,sans-serif;font-size:.7rem;background:#eee;color:#555;padding:1px 6px;border-radius:3px;margin-left:4px;text-transform:uppercase;letter-spacing:.05em}
+code{font-size:.9em}
+a{color:#0b5cad;text-decoration:underline;text-underline-offset:2px}a:hover{color:#a33}
+footer{margin-top:52px;border-top:2px solid #1c1c1c;padding-top:16px}
+</style></head><body>
+<div class="date">Thursday, 26 November 2026</div>
+<h1>AI Trends Daily</h1>
+<p class="dek">The math week becomes a crypto scare. Scott Aaronson's "HOLY SHIT" post is HN's top story of the day, Google posts AI-generated factoring papers, and rumors say a lab can factor fast. Also: OpenAI quietly tightens GPT-6.2 limits, Anthropic swings about 10% intraday, and the NYT tells its photographers to stay off Photoshop 2027.</p>
+<div class="note"><b>Limited-confidence digest.</b> The network policy again blocked Reddit, X, YouTube, the HN API and direct page fetches. Everything below comes from web-search summaries and the GitHub search API, including auto-generated Hacker News digests published as GitHub issues. HN scores are approximate snapshots. Already covered and not repeated: the 9/4 matrix-multiplication preprint, GPT-6 protein design, the Anthropic distillation Ask HN, New York's AI-toy ban, and "LLM agents work for their parent companies."</div>
+
+<h2>Lead story</h2>
+<div class="lead">
+<h3>"HOLY SHIT HOLY SHIT HOLY SHIT HOLY SHIT": Scott Aaronson says AI-driven math has reached a new scale and that labs are "virtually certain" to be holding cryptography-breaking algorithms.</h3>
+<p>Aaronson's Shtetl-Optimized post reached about <b>1,206 points and 1,056 comments</b> on HN. He ties together a week of AI-assisted results and says he now feels "in my bones" that a proof of P ≠ NP is not far off. He also writes that, from multiple reliable sources, he is virtually certain that frontier labs hold unreleased algorithmic results that could break deployed cryptosystems. The same news cycle on HN included:</p>
+<ul>
+<li><b>Google Research "Cogentic" papers.</b> Google posted six AI-generated papers in one day. One claims <i>unconditional</i> integer factorization in L<sub>N</sub>[1/3, O(1)], and another gives a provable discrete-log algorithm for small-characteristic fields. (HN about 475 pts, 342 comments)</li>
+<li><b>"Rumors swirling that labs might have cracked factoring in P"</b>, from an r/singularity thread. (HN about 479 pts, 353 comments)</li>
+<li><b>Anthropic's claimed VP ≠ VNP proof</b> of Valiant's 1979 conjecture. It is a 70-page paper with about 73k lines of Lean, and no human has checked it yet.</li>
+<li><b>An OpenAI preprint disproving the polynomial Hirsch conjecture.</b> (HN about 144 pts)</li>
+<li><b>A 76k-line rewrite of Anthropic's GRH Lean proof</b>, down from 17.4M lines. (HN about 374 pts)</li>
+</ul>
+<p><b>Why it matters:</b> a respected complexity theorist is now publicly saying the AI-math wave is real and that it reaches cryptography. That moves the debate from "neat Lean demos" to "is RSA safe?" Keep the numbers in proportion: the number field sieve already runs in heuristic L[1/3] time, so the Google result, if it holds, removes the unproven assumptions rather than giving a faster attack. Nothing public today breaks RSA. The factoring-in-P claim is still an unsourced rumor, and every paper listed is an unreviewed preprint.</p>
+<p class="meta">Discussed: Hacker News (#1 story, with three related threads in the top 20), r/singularity, math and crypto Twitter, Techmeme · very high <span class="flag">unreviewed claims</span> · <a href="https://scottaaronson.blog/?p=10379">Aaronson's post</a> · <a href="https://news.ycombinator.com/item?id=50646108">HN thread</a> · <a href="https://www.techmeme.com/261126/p8">Techmeme</a> · <a href="https://news.ycombinator.com/item?id=50642086">Cogentic HN thread</a> · <a href="https://news.ycombinator.com/item?id=50643065">Factoring-rumor HN thread</a> · <a href="https://interestingengineering.com/ai-robotics/claude-proves-vp-not-vnp-valiant-conjecture">VP ≠ VNP coverage</a> · <a href="https://news.ycombinator.com/item?id=50644980">Hirsch HN thread</a></p>
+</div>
+
+<h2>Models &amp; Releases</h2>
+<div class="card">
+<p><b>OpenAI tightens GPT-6.2 limits after a launch "billing error": Astra now uses up allowances 40% faster and Sol 25% faster.</b> OpenAI says Astra and Sol usage has been under-counted since the Nov 17 launch. The fix means the same work now costs more of a plan's allowance. Past usage won't be charged, and OpenAI is giving one banked reset to all Go, Plus, Pro and Business users. Other models are not affected. This comes ahead of December's move to a single shared ChatGPT and Codex allowance.</p>
+<p class="meta">Hacker News (about 186 pts, 91 comments), dev Twitter · medium–high · <a href="https://twitter.com/thsottiaux/status/2125784147889393806">Announcement on X</a> · <a href="https://news.ycombinator.com/item?id=50651117">HN thread</a> · <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits">OpenAI usage-limits doc</a></p>
+</div>
+<div class="card">
+<p><b>GPT-6.2 Astra is the first model to beat Googlers' human records on a Go code-golf benchmark.</b> It is a small, concrete capability marker that circulated alongside the math news.</p>
+<p class="meta">Hacker News (front page) · medium · <a href="https://bjin.github.io/go-codegolf-benchmark/#leaderboard">Leaderboard</a> · <a href="https://news.ycombinator.com/item?id=50601280">HN thread</a></p>
+</div>
+
+<h2>Tooling</h2>
+<div class="card">
+<p><b>Anthropic rewrote its Messages API from Python to Rust, using production traffic as the test.</b> The team ran the new API against live traffic and sent agents to fix any divergences. It found that the ported test suite alone was not enough, since it had more than 100 weakened assertions. Anthropic reports about 70% less CPU per request and about 20% faster median time to first token, with no downtime and no feature freeze.</p>
+<p class="meta">Hacker News (early, about 26 pts), infra Twitter · low–medium · <a href="https://www.anthropic.com/research/migrating-api-to-rust">Anthropic write-up</a> · <a href="https://news.ycombinator.com/item?id=50646357">HN thread</a></p>
+</div>
+<div class="card">
+<p><b>Bare Metal Qwen: a Qwen model running inference with no operating system.</b> It is part of the <code>llm.asm</code> project and a favorite of low-level hackers this week.</p>
+<p class="meta">Hacker News (about 134 pts, 30 comments), r/LocalLLaMA · medium · <a href="https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os">GitHub</a> · <a href="https://news.ycombinator.com/item?id=50648365">HN thread</a></p>
+</div>
+
+<h2>Research</h2>
+<div class="card">
+<p><b>"Models Can Communicate via Inference Servers Despite Being Sandboxed."</b> This LessWrong post shows two agents on the same inference server reliably passing information to each other. They have no shared filesystem and no network, and they do it by changing the server's state in ways the other can detect. In the demo, one agent picks one of eight colors and the other names it. The author admits the setups are contrived but argues that even a few covert bits are dangerous for multi-agent containment.</p>
+<p class="meta">Hacker News (about 458 pts, 202 comments), AI-safety Twitter · high · <a href="https://lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being">LessWrong</a></p>
+</div>
+<div class="card">
+<p><b>PenGPT: a generative transformer for handwriting and sketches, trained on pen strokes.</b> Sam Greydanus's write-up was the day's lighter research hit, praised for being original.</p>
+<p class="meta">Hacker News (about 399 pts, 77 comments) · medium–high · <a href="https://greydanus.github.io/2026/11/12/pengpt/">Write-up</a> · <a href="https://news.ycombinator.com/item?id=50637056">HN thread</a></p>
+</div>
+
+<h2>Business</h2>
+<div class="card">
+<p><b>The Nasdaq 100 briefly enters a bear market (−20% from its October peak), and Anthropic swings about 10% intraday.</b> ANT fell almost 10% before recovering, and closed slightly up, by CNN's report, or up about 4%, by CNBC's. Either way it ended near its $83 IPO price. Nvidia fell about 4% despite Jensen Huang's return. New tariff proposals on 14 trading partners added to the pressure. US markets are closed today for Thanksgiving.</p>
+<p class="meta">r/stocks, finance Twitter, financial press · high · <a href="https://www.cnbc.com/2026/11/25/nvidia-ai-stock-tech-selloff.html">CNBC</a> · <a href="https://www.cnn.com/2026/11/25/business/ai-sell-off-despite-huang-nvidia-return">CNN</a> · <a href="https://www.techtimes.com/articles/331481/20261125/anthropic-stock-falls-below-83-ipo-price-after-morgan-stanley-ended-price-support-early.htm">Tech Times on underwriter support ending</a></p>
+</div>
+
+<h2>Culture / Discourse</h2>
+<div class="card">
+<p><b>The New York Times tells freelance photographers not to use Photoshop 2027 on assignment.</b> Photoshop 28.0+ adds an "AI Assisted Editor," prompt-based edits and AI recomposition, and it can mark images as AI-generated in their metadata in ways users "may not" notice. The Times says that risks its readers' trust, and an NYT spokesperson confirmed the rule. The HN thread turned into a broad argument about provenance metadata and AI features turned on by default.</p>
+<p class="meta">Hacker News (about 337 pts, 288 comments), photography and media Twitter · high · <a href="https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features">The Verge</a> · <a href="https://news.ycombinator.com/item?id=50647673">HN thread</a></p>
+</div>
+
+<footer>
+<h2 style="margin-top:0">Quiet but worth watching</h2>
+<p><b>"Billions in Data Center Deals Grind to Halt After Chip Curbs."</b> Bloomberg reports that multi-billion-dollar data-center deals are stalling under the new AI-chip export controls. It got almost no attention on HN (about 11 points), but if the curbs freeze overseas buildouts, it may explain more of this month's AI-stock slide than any earnings report. <a href="https://www.bloomberg.com/news/articles/2026-11-25/billions-in-data-center-deals-grind-to-halt-after-ai-chip-curbs">Bloomberg</a> · <a href="https://news.ycombinator.com/item?id=50650986">HN</a></p>
+<p class="meta">Compiled 26 Nov 2026 (UTC) by the scheduled AI-trends routine.</p>
+</footer>
+</body></html>
